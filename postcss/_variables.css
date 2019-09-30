@@ -7,11 +7,16 @@
 
 :root {
     /* colors */
-    --soft-blue: -hsl(231, 69%, 60%);
+    --soft-white: hsl(0, 0%, 96.86%);
+    --soft-white-medium: #e5e7f4;
+    --soft-white-dark: #f4f4f4;
+    --soft-blue: hsl(231, 69%, 60%);
+    --soft-blue-medium: hsl(231, 69%, 60%, 0.2);
+    --soft-blue-dark: #5361b9;
     --soft-red: hsl(0, 94%, 66%);
     --grayish-blue: hsl(229, 8%, 60%);
     --very-dark-blue: hsl(229, 31%, 21%);
-    --very-dark-blue-transparent: hsla(229, 31%, 21%, 0.95);
+    --very-dark-blue-transparent: hsla(229, 31%, 21%, 0.9);
 
     /* font-family */
     --font-sans: 'Rubik', sans-serif;

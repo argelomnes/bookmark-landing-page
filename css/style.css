@@ -1,11 +1,16 @@
 /* media queries */
 :root {
     /* colors */
-    --soft-blue: -hsl(231, 69%, 60%);
+    --soft-white: hsl(0, 0%, 96.86%);
+    --soft-white-medium: #e5e7f4;
+    --soft-white-dark: #f4f4f4;
+    --soft-blue: hsl(231, 69%, 60%);
+    --soft-blue-medium: hsl(231, 69%, 60%, 0.2);
+    --soft-blue-dark: #5361b9;
     --soft-red: hsl(0, 94%, 66%);
     --grayish-blue: hsl(229, 8%, 60%);
     --very-dark-blue: hsl(229, 31%, 21%);
-    --very-dark-blue-transparent: hsla(229, 31%, 21%, 0.95);
+    --very-dark-blue-transparent: hsla(229, 31%, 21%, 0.9);
 
     /* font-family */
     --font-sans: 'Rubik', sans-serif;
@@ -28,13 +33,13 @@ body {
     margin: 0;
 
     background-color: #fff;
-
+    color: hsl(229, 8%, 60%);
+    color: var(--grayish-blue);
     font-family: 'Rubik', sans-serif;
-
     font-family: var(--font-sans);
     font-size: 1.4rem;
     font-weight: 400;
-    letter-spacing: 0.001rem;
+    letter-spacing: 0.063rem;
     line-height: 1.5;
     text-rendering: optimizeLegibility
 }
@@ -100,13 +105,15 @@ h3 {
     margin-top: 0;
 
     font-weight: 500;
+    color: hsl(229, 31%, 21%);
+    color: var(--very-dark-blue);
 }
 h1 {
-    margin-bottom: 2.4rem;
+    margin-bottom: 1.5rem;
 
     font-size: 3rem;
     letter-spacing: 0;
-    line-height: 1.5
+    line-height: 1.4
 }
 @media (min-width: 750px) {
 h1 {
@@ -136,6 +143,8 @@ h3 {
 }
 p {
     margin-top: 0;
+    margin-bottom: 3.6rem;
+    line-height: 1.7;
 }
 button,
 input {
@@ -144,14 +153,57 @@ input {
 .container {
     max-width: 1440px;
     max-width: var(--grid-width);
-    padding-right: 3rem;
-    padding-left: 3rem;
+    padding-right: 3.1rem;
+    padding-left: 3.1rem;
 }
 .logo {
     width: 14.8rem;
 }
+.btn {
+    height: 4.6rem;
+    padding: 0 1.3rem;
+    border-radius: 4px;
+    line-height: 4.6rem;
+    display: block;
+    font-weight: 500;
+    cursor: pointer;
+}
+.btn-primary {
+    background-color: hsl(231, 69%, 60%);
+    background-color: var(--soft-blue);
+    color: #fff;
+    border: solid 1px #5361b9;
+    border: solid 1px var(--soft-blue-dark);
+    text-shadow: 0 1px 0 #5361b9;
+    text-shadow: 0 1px 0 var(--soft-blue-dark);
+    box-shadow: 0 5px 8px 1px hsl(231, 69%, 60%, 0.2);
+    box-shadow: 0 5px 8px 1px var(--soft-blue-medium);
+}
+.btn-secondary {
+    background-color: hsl(0, 0%, 96.86%);
+    background-color: var(--soft-white);
+    color: hsl(229, 31%, 21%);
+    color: var(--very-dark-blue);
+    border: solid 1px #f4f4f4;
+    border: solid 1px var(--soft-white-dark);
+    text-shadow: 0 1px 0 #f4f4f4;
+    text-shadow: 0 1px 0 var(--soft-white-dark);
+}
+.btn-group {
+    display: flex;
+    justify-content: space-between;
+    max-width: 312px;
+    margin: 0 auto;
+}
+.soft-white-shadow {
+    box-shadow: 0 5px 8px 1px #e5e7f4;
+    box-shadow: 0 5px 8px 1px var(--soft-white-medium);
+}
 .social-icon {
     width: 2.4rem;
+}
+.site-header {
+    margin-bottom: 7.8rem
 }
 .site-header .container {
         display: flex;
@@ -232,7 +284,7 @@ input {
 .nav-wrapper {
     display: flex;
     position: fixed;
-    top: -25rem;
+    top: -100vh;
     right: 0;
     left: 0;
 
@@ -244,7 +296,7 @@ input {
     transition: 0.3s cubic-bezier(0.94, 0.06, 0.61, 0.92);
 
     opacity: 0;
-    background: hsla(229, 31%, 21%, 0.95);
+    background: hsla(229, 31%, 21%, 0.9);
     background: var(--very-dark-blue-transparent);
 }
 .login {
@@ -274,3 +326,14 @@ input {
         line-height: 6.5rem;
         text-transform: uppercase;
     }
+section {
+    margin-bottom: 15rem;
+}
+.intro {
+    text-align: center;
+}
+.tablet {
+    width: 350px;
+    max-width: 350px;
+    margin: 0 -18px 55px;
+}

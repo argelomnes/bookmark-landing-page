@@ -1,4 +1,6 @@
 .site-header {
+    margin-bottom: 7.8rem;
+
     & .container {
         display: flex;
 
@@ -89,7 +91,7 @@
 .nav-wrapper {
     display: flex;
     position: fixed;
-    top: -25rem;
+    top: -100vh;
     right: 0;
     left: 0;
 
