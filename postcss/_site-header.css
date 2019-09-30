@@ -1,0 +1,136 @@
+.site-header {
+    & .container {
+        display: flex;
+
+        align-items: center;
+        justify-content: space-between;
+
+        margin-top: 4rem;
+    }
+
+    & .social {
+        display: flex;
+
+        align-items: center;
+        justify-content: space-around;
+
+        width: 12.8rem;
+        margin: auto auto 4rem;
+    }
+}
+
+.nav {
+    display: flex;
+
+    text-align: center;
+}
+
+.nav-toggle {
+    display: flex;
+    z-index: 100;
+
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 1.5rem;
+
+    cursor: pointer;
+
+    & i {
+        display: block;
+
+        width: 1.8rem;
+        height: 0.3rem;
+
+        background: var(--very-dark-blue);
+    }
+}
+
+/* hamburger animation */
+#nav:checked + .nav-toggle {
+    transform: rotate(45deg);
+}
+
+#nav:checked + .nav-toggle i,
+#nav + .nav-toggle i {
+    transition: transform 0.2s ease-out;
+}
+
+#nav:checked + .nav-toggle i:nth-child(1) {
+    transform: translateY(5px) rotate(180deg);
+
+    background-color: #fff;
+}
+
+#nav:checked + .nav-toggle i:nth-child(2) {
+    transform: translateY(-5rem);
+
+    opacity: 0;
+    background-color: #fff;
+}
+
+#nav:checked + .nav-toggle i:nth-child(3) {
+    transform: translateY(-7px) rotate(90deg);
+
+    background-color: #fff;
+}
+
+#nav:checked ~ .nav-wrapper {
+    z-index: 90;
+    top: 0;
+
+    opacity: 1;
+}
+
+#nav + .nav-toggle i + .nav {
+    display: hidden;
+}
+
+.nav-wrapper {
+    display: flex;
+    position: fixed;
+    top: -25rem;
+    right: 0;
+    left: 0;
+
+    flex-direction: column;
+
+    height: 100vh;
+    padding: 4rem 3rem;
+
+    transition: 0.3s cubic-bezier(0.94, 0.06, 0.61, 0.92);
+
+    opacity: 0;
+    background: var(--very-dark-blue-transparent);
+}
+
+.login {
+    border: solid 2px #fff;
+    border-radius: 5px;
+}
+
+.site-nav {
+    margin-top: 4rem;
+
+    & li {
+        border-top: solid 1px var(--grayish-blue);
+
+        &:last-child {
+            padding-top: 2.4rem;
+        }
+    }
+
+    & a {
+        display: block;
+
+        height: 6.5rem;
+
+        transition: 0.2s;
+
+        color: #fff;
+        font-size: 1.6rem;
+        letter-spacing: 0.4rem;
+        line-height: 6.5rem;
+        text-transform: uppercase;
+    }
+}
