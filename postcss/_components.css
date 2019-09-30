@@ -9,33 +9,43 @@
 }
 
 .btn {
-    height: 4.6rem;
-    padding: 0 1.3rem;
-    border-radius: 4px;
-    line-height: 4.6rem;
     display: block;
+
+    height: 4.6rem;
+    padding: 0 1.8rem;
+
+    border-radius: 4px;
+
     font-weight: 500;
+    line-height: 4.6rem;
+
     cursor: pointer;
 }
 
 .btn-primary {
-    background-color: var(--soft-blue);
-    color: #fff;
     border: solid 1px var(--soft-blue-dark);
-    text-shadow: 0 1px 0 var(--soft-blue-dark);
+
+    background-color: var(--soft-blue);
     box-shadow: 0 5px 8px 1px var(--soft-blue-medium);
+
+    color: #fff;
+    text-shadow: 0 1px 0 var(--soft-blue-dark);
 }
 
 .btn-secondary {
-    background-color: var(--soft-white);
-    color: var(--very-dark-blue);
     border: solid 1px var(--soft-white-dark);
+
+    background-color: var(--soft-white);
+
+    color: var(--dark-blue);
     text-shadow: 0 1px 0 var(--soft-white-dark);
 }
 
 .btn-group {
     display: flex;
+
     justify-content: space-between;
+
     max-width: 312px;
     margin: 0 auto;
 }

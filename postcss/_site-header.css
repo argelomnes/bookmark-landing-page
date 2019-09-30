@@ -44,7 +44,7 @@
         width: 1.8rem;
         height: 0.3rem;
 
-        background: var(--very-dark-blue);
+        background: var(--dark-blue);
     }
 }
 
@@ -103,7 +103,7 @@
     transition: 0.3s cubic-bezier(0.94, 0.06, 0.61, 0.92);
 
     opacity: 0;
-    background: var(--very-dark-blue-transparent);
+    background: var(--dark-blue-transparent);
 }
 
 .login {
@@ -115,7 +115,7 @@
     margin-top: 4rem;
 
     & li {
-        border-top: solid 1px var(--grayish-blue);
+        border-top: solid 1px var(--gray-blue);
 
         &:last-child {
             padding-top: 2.4rem;

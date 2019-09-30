@@ -23,6 +23,7 @@
             .attribution a {
                 color: hsl(228, 45%, 44%);
             }
+
         </style>
     </head>
 
@@ -128,54 +129,63 @@
             </div>
         </section>
 
-        <section>
-            <h2>Features</h2>
-            <p>
-                Our aim is to make it quick and easy for you to access your favourite websites. Your
-                bookmarks sync between your devices so you can access them on the go.
-            </p>
+        <section class="features">
+            <div class="container">
+                <h2>Features</h2>
+                <p>
+                    Our aim is to make it quick and easy for you to access your favourite websites.
+                    Your bookmarks sync between your devices so you can access them on the go.
+                </p>
 
-            <div class="tabs">
-                <div class="tab">
-                    <input type="radio" name="tabgroup" id="tab-1" checked />
-                    <label for="tab-1">Simple Bookmarking</label>
-                    <div class="content">
-                        <h2>Bookmark in one click</h2>
-                        <p>
-                            Organize your bookmarks however you like. Our simple drag-and-drop
-                            interface gives you complete control over how you manage your favourite
-                            sites.
-                        </p>
+                <ul class="tab">
+                    <li>
+                        <button
+                            class="tablinks"
+                            onclick="openTab(event, 'tab-01')"
+                            id="defaultOpen"
+                        >
+                            Simple Bookmarking
+                        </button>
+                    </li>
+                    <li>
+                        <button class="tablinks" onclick="openTab(event, 'tab-02')">
+                            Speedy Searching
+                        </button>
+                    </li>
+                    <li>
+                        <button class="tablinks" onclick="openTab(event, 'tab-03')">
+                            Easy Sharing
+                        </button>
+                    </li>
+                </ul>
 
-                        <a href="#" class="btn">More Info</a>
-                    </div>
+                <div id="tab-01" class="tabcontent">
+                    <h2>Bookmark in one click</h2>
+                    <p>
+                        Organize your bookmarks however you like. Our simple drag-and-drop interface
+                        gives you complete control over how you manage your favourite sites.
+                    </p>
+
+                    <a href="#" class="btn">More Info</a>
                 </div>
 
-                <div class="tab">
-                    <input type="radio" name="tabgroup" id="tab-2" />
-                    <label for="tab-2">Speedy Searching</label>
-                    <div class="content">
-                        <h2>Intelligent search</h2>
-                        <p>
-                            Our powerful search feature will help you find saved sites in no time at
-                            all. No need to trawl through all of your bookmarks.
-                        </p>
+                <div id="tab-02" class="tabcontent">
+                    <h2>Intelligent search</h2>
+                    <p>
+                        Our powerful search feature will help you find saved sites in no time at
+                        all. No need to trawl through all of your bookmarks.
+                    </p>
 
-                        <a href="#" class="btn">More Info</a>
-                    </div>
+                    <a href="#" class="btn">More Info</a>
                 </div>
 
-                <div class="tab">
-                    <input type="radio" name="tabgroup" id="tab-3" />
-                    <label for="tab-3">Easy Sharing</label>
-                    <div class="content">
-                        <h2>Share your bookmarks</h2>
-                        <p>
-                            Easily share your bookmarks and collections with others. Create a
-                            shareable link that you can send at the click of a button.
-                        </p>
-                        <a href="#" class="btn">More Info</a>
-                    </div>
+                <div id="tab-03" class="tabcontent">
+                    <h2>Share your bookmarks</h2>
+                    <p>
+                        Easily share your bookmarks and collections with others. Create a shareable
+                        link that you can send at the click of a button.
+                    </p>
+                    <a href="#" class="btn">More Info</a>
                 </div>
             </div>
         </section>
@@ -326,5 +336,6 @@
     Coded by <a href="https://twitter.com/css_override">Argel&nbsp;Omnes</a>.
 </p> -->
         </footer>
+        <script src="js/scripts.js"></script>
     </body>
 </html>

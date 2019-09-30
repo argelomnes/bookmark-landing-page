@@ -15,12 +15,12 @@ body {
     margin: 0;
 
     background-color: #fff;
-    color: var(--grayish-blue);
+
+    color: var(--gray-blue);
     font-family: var(--font-sans);
     font-size: 1.4rem;
     font-weight: 400;
-    letter-spacing: 0.063rem;
-    line-height: 1.5;
+    line-height: 1.6;
     text-rendering: optimizeLegibility;
 
     @media (--tablet) {
@@ -139,8 +139,8 @@ h2,
 h3 {
     margin-top: 0;
 
+    color: var(--dark-blue);
     font-weight: 500;
-    color: var(--very-dark-blue);
 }
 
 h1 {
@@ -158,11 +158,11 @@ h1 {
 }
 
 h2 {
-    margin-bottom: 2.4rem;
+    margin-bottom: 1.2rem;
 
-    font-size: 1.8rem;
+    font-size: 2.4rem;
     letter-spacing: -0.001rem;
-    line-height: 1.25;
+    line-height: 1.4;
 
     @media (--tablet) {
         margin-bottom: 4rem;
@@ -178,9 +178,11 @@ h3 {
 }
 
 p {
-    margin-top: 0;
+    margin-top: 3rem;
     margin-bottom: 3.6rem;
-    line-height: 1.7;
+
+    letter-spacing: 0.056rem;
+    line-height: 1.8;
 }
 
 button,
