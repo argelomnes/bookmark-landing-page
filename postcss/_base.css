@@ -23,7 +23,7 @@ body {
     }
 }
 
-// media
+/* media */
 img,
 svg {
     display: block;
@@ -45,7 +45,7 @@ figure {
     margin: 1.6rem 0;
 }
 
-// alignments
+/* alignments */
 .alignleft {
     margin-right: 2.4rem;
     float: left;
@@ -81,17 +81,17 @@ figure {
     text-align: center;
 }
 
-// Hide visually and from screen readers
+/* Hide visually and from screen readers */
 .hidden {
     display: none;
 }
 
-// Hide visually and from screen readers, but maintain layout
+/* Hide visually and from screen readers, but maintain layout */
 .invisible {
     visibility: hidden;
 }
 
-// Hide only visually, but have it available for screen readers
+/* Hide only visually, but have it available for screen readers */
 .sr-only {
     position: absolute;
 
@@ -120,7 +120,7 @@ figure {
     white-space: inherit;
 }
 
-// Typography
+/* Typography */
 h1,
 h2,
 h3 {

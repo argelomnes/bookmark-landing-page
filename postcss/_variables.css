@@ -1,4 +1,4 @@
-// media queries
+/* media queries */
 @custom-media --phone-s (min-width: 375px);
 @custom-media --phone (min-width: 500px);
 @custom-media --tablet (min-width: 750px);
@@ -6,15 +6,15 @@
 @custom-media --desktop (min-width: 1200px);
 
 :root {
-    // colors
-    --soft-blue: - hsl(231, 69%, 60%);
+    /* colors */
+    --soft-blue: -hsl(231, 69%, 60%);
     --soft-red: hsl(0, 94%, 66%);
     --grayish-blue: hsl(229, 8%, 60%);
     --very-dark-blue: hsl(229, 31%, 21%);
 
-    // font-family
+    /* font-family */
     --font-sans: 'Rubik', sans-serif;
 
-    // dimension
+    /* dimension */
     --grid-width: 1440px;
 }

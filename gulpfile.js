@@ -1,35 +1,35 @@
 const gulp = require('gulp'),
     browsersync = require('browser-sync').create(),
+    cssImport = require('postcss-import'),
     postcss = require('gulp-postcss'),
     postcssPresetEnv = require('postcss-preset-env'),
     purgecss = require('gulp-purgecss'),
-    rename = require('gulp-rename'),
-    sass = require('gulp-sass'),
-    sourcemaps = require('gulp-sourcemaps');
+    rename = require('gulp-rename');
 
 const paths = {
     html: {
-        src: './*.html',
+        src: './*.html'
     },
     css: {
-        src: './sass/*.scss',
+        src: './postcss/*.css',
         dest: './css/'
     }
 };
 
 function html() {
-    return gulp
-        .src(paths.html.src, {
-            since: gulp.lastRun(html)
-        })
+    return gulp.src(paths.html.src, {
+        since: gulp.lastRun(html)
+    });
 }
 
 function css() {
     return gulp
-        .src('./sass/main.scss')
-        .pipe(sourcemaps.init())
-        .pipe(sass().on('error', sass.logError))
-        .pipe(postcss([postcssPresetEnv({ stage: 0 })]))
+        .src('./postcss/main.css')
+        .pipe(postcss([cssImport, postcssPresetEnv({ stage: 0 })]))
+        .on('error', function(errorInfo) {
+            console.log(errorInfo.toString());
+            this.emit('end');
+        })
         .pipe(
             purgecss({
                 content: [paths.html.src]
@@ -40,7 +40,6 @@ function css() {
                 basename: 'style'
             })
         )
-        .pipe(sourcemaps.write('/'))
         .pipe(gulp.dest(paths.css.dest))
         .pipe(browsersync.stream());
 }
