@@ -36,6 +36,7 @@ function css() {
             //         content: [paths.html.src]
             //     })
             // )
+            // removed as this deletes the .active class
             .pipe(
                 rename({
                     basename: 'style'
@@ -48,7 +49,7 @@ function css() {
 
 function watch() {
     browsersync.init({
-        open: false,
+        // open: false,
         notify: false,
         server: {
             baseDir: './'

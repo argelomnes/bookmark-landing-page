@@ -59,7 +59,7 @@
 }
 
 #nav:checked + .nav-toggle i:nth-child(1) {
-    transform: translateY(5px) rotate(180deg);
+    transform: translateY(0.5rem) rotate(180deg);
 
     background-color: #fff;
 }
@@ -72,7 +72,7 @@
 }
 
 #nav:checked + .nav-toggle i:nth-child(3) {
-    transform: translateY(-7px) rotate(90deg);
+    transform: translateY(-0.7rem) rotate(90deg);
 
     background-color: #fff;
 }

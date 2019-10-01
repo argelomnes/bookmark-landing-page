@@ -7,9 +7,9 @@ section {
 }
 
 .tablet {
-    width: 350px;
-    max-width: 350px;
-    margin: 0 -18px 55px;
+    width: 35rem;
+    max-width: 35rem;
+    margin: 0 -1.8rem 5.5rem;
 }
 
 .features {
@@ -20,6 +20,8 @@ section {
     display: flex;
 
     flex-direction: column;
+
+    margin-top: 3.8rem;
 
     & li {
         border-top: solid 1px var(--gray-blue-light);
@@ -34,7 +36,7 @@ section {
         position: relative;
 
         width: 100%;
-        height: 57px;
+        height: 5.7rem;
 
         transition: 0.3s;
 
@@ -43,7 +45,7 @@ section {
         background-color: inherit;
 
         color: var(--gray);
-        line-height: 57px;
+        line-height: 5.7rem;
 
         cursor: pointer;
 
@@ -60,7 +62,7 @@ section {
             left: 50%;
 
             width: 0;
-            height: 4px;
+            height: 0.4rem;
 
             transform: translateX(-50%);
             transition: width 0.1s ease-out;
@@ -71,9 +73,25 @@ section {
         }
         &.active::before,
         &:hover::before {
-            width: 36%;
+            width: 46%;
 
             color: var(--dark-blue);
+        }
+    }
+}
+
+.tabcontent {
+    padding-top: 7.2rem;
+
+    & img {
+        margin-bottom: 7.5rem;
+    }
+
+    & .btn {
+        display: none;
+
+        @media (--tablet) {
+            display: block;
         }
     }
 }

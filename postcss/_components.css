@@ -16,6 +16,7 @@
 
     border-radius: 4px;
 
+    font-size: 1.7rem;
     font-weight: 500;
     line-height: 4.6rem;
 
@@ -46,7 +47,7 @@
 
     justify-content: space-between;
 
-    max-width: 312px;
+    max-width: 31.2rem;
     margin: 0 auto;
 }
 
