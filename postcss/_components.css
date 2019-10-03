@@ -8,16 +8,22 @@
     width: 14.8rem;
 }
 
+input[type='email'],
+.btn {
+    height: 4.6rem;
+
+    border: solid 1px currentColor;
+    border-radius: 4px;
+
+    line-height: 4.6rem;
+}
+
 .btn {
     display: block;
 
-    height: 4.6rem;
     padding: 0 1.8rem;
 
-    border-radius: 4px;
-
     font-weight: 500;
-    line-height: 4.6rem;
 
     cursor: pointer;
 }
@@ -28,7 +34,7 @@
     background-color: var(--soft-blue);
     box-shadow: 0 5px 8px 1px var(--soft-blue-medium);
 
-    color: #fff;
+    color: var(--white);
     text-shadow: 0 1px 0 var(--soft-blue-dark);
 }
 
@@ -36,10 +42,10 @@
     border: solid 1px var(--soft-white-dark);
 
     background-color: var(--soft-white);
+    box-shadow: 0 5px 8px 1px var(--soft-blue-medium);
 
     color: var(--dark-blue);
     text-shadow: 0 1px 0 var(--soft-white-dark);
-    box-shadow: 0 5px 8px 1px var(--soft-blue-medium);
 }
 
 .btn-group {
@@ -55,6 +61,18 @@
     width: 11.4rem;
     margin: auto;
 }
+
+.btn-submit {
+    height: 4.8rem;
+
+    border-color: var(--soft-red);
+
+    background-color: var(--soft-red);
+
+    color: var(--white);
+    line-height: 4.8rem;
+}
+
 /* .soft-white-shadow {
     box-shadow: 0 5px 8px 1px var(--soft-white-medium);
 } */
@@ -64,11 +82,13 @@
 }
 
 .card {
-    border-radius: 12px;
-    box-shadow: 0 5px 8px 1px var(--soft-blue-medium);
-    padding: 2.4rem;
     width: 90%;
     margin: 0 auto 4.6rem;
+    padding: 2.4rem;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 8px 1px var(--soft-blue-medium);
 
     & img {
         width: 10rem;
@@ -77,8 +97,10 @@
 }
 
 hr {
-    border: 0;
-    background: url('../images/bg-dots.svg') repeat-x 50% 50%;
     height: 1rem;
     margin: 2.4rem -2.4rem;
+
+    border: 0;
+
+    background: url('../images/bg-dots.svg') repeat-x 50% 50%;
 }

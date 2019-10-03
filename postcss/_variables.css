@@ -1,5 +1,6 @@
 :root {
     /* colors */
+    --white: #fff;
     --soft-white: hsl(0, 0%, 96.86%);
     --soft-white-medium: #e5e7f4;
     --soft-white-dark: #f4f4f4;

@@ -61,20 +61,20 @@
 #nav:checked + .nav-toggle i:nth-child(1) {
     transform: translateY(0.5rem) rotate(180deg);
 
-    background-color: #fff;
+    background-color: var(--white);
 }
 
 #nav:checked + .nav-toggle i:nth-child(2) {
     transform: translateY(-5rem);
 
     opacity: 0;
-    background-color: #fff;
+    background-color: var(--white);
 }
 
 #nav:checked + .nav-toggle i:nth-child(3) {
     transform: translateY(-0.7rem) rotate(90deg);
 
-    background-color: #fff;
+    background-color: var(--white);
 }
 
 #nav:checked ~ .nav-wrapper {
@@ -107,7 +107,7 @@
 }
 
 .login {
-    border: solid 2px #fff;
+    border: solid 2px var(--white);
     border-radius: 5px;
 }
 
@@ -129,7 +129,7 @@
 
         transition: 0.2s;
 
-        color: #fff;
+        color: var(--white);
         font-size: 1.6rem;
         letter-spacing: 0.4rem;
         line-height: 6.5rem;

@@ -23,6 +23,7 @@
             .attribution a {
                 color: hsl(228, 45%, 44%);
             }
+
         </style>
     </head>
 
@@ -339,22 +340,38 @@
             </div>
         </section>
 
-        <section>
-            <p>35,000+ already joined</p>
-            <h2>Stay up-to-date with what we’re doing</h2>
+        <section class="sign-up">
+            <div class="container">
+                <p class="extra-info"><strong>35,000+ already joined</strong></p>
+                <h2>Stay up-to-date with what we’re doing</h2>
 
-            <form action="#" method="get" accept-charset="utf-8">
-                <label for="email" class="sr-only">Enter your email address</label>
-                <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    placeholder="Enter your email address"
-                />
-                <button>
-                    Contact Us
-                </button>
-            </form>
+                <!-- <form novalidate>
+                    <p>
+                        <label for="mail">
+                            <span>Please enter an email address:</span>
+                            <input  />
+
+                        </label>
+                    </p>
+                    <button>Submit</button>
+                </form> -->
+
+                <form accept-charset="utf-8" novalidate>
+                    <p>
+                        <label for="mail" class="sr-only">Enter your email address</label>
+                        <input
+                            type="email"
+                            id="mail"
+                            name="mail"
+                            placeholder="Enter your email address"
+                        />
+                        <em class="error" aria-live="polite"></em>
+                    </p>
+                    <button class="btn btn-submit">
+                        Contact Us
+                    </button>
+                </form>
+            </div>
         </section>
 
         <footer>
