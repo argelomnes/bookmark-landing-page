@@ -188,5 +188,6 @@ p {
 
 button,
 input {
+    background-color: none;
     font-family: inherit;
 }

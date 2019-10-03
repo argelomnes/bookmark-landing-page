@@ -51,6 +51,10 @@
     margin: 0 auto;
 }
 
+.btn-more {
+    width: 11.4rem;
+    margin: auto;
+}
 /* .soft-white-shadow {
     box-shadow: 0 5px 8px 1px var(--soft-white-medium);
 } */
