@@ -4,3 +4,5 @@
 @import '_components';
 @import '_site-header';
 @import '_content';
+@import '_site-footer';
+@import '_misc';

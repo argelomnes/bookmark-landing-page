@@ -171,6 +171,7 @@ section {
 }
 
 .sign-up {
+    margin-bottom: 0;
     padding: 6.7rem 0 6rem;
 
     background-color: var(--soft-blue);

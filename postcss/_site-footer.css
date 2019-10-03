@@ -1,0 +1,42 @@
+.site-footer {
+    padding: 3.8rem 0 0.7rem;
+
+    background-color: var(--dark-blue);
+
+    text-align: center;
+
+    & .container {
+        display: flex;
+
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    & .social {
+        display: flex;
+
+        align-items: center;
+        justify-content: space-around;
+
+        width: 12.8rem;
+        margin: auto auto 4rem;
+    }
+}
+
+.site-footer-nav {
+    margin: 4rem 0 3rem;
+
+    & a {
+        display: block;
+
+        height: 4rem;
+
+        transition: 0.2s;
+
+        color: var(--white);
+        letter-spacing: 0.3rem;
+        line-height: 4rem;
+        text-transform: uppercase;
+    }
+}
