@@ -37,7 +37,7 @@ section {
 
         width: 100%;
         height: 5.7rem;
-
+        font-size: 1.7rem;
         transition: 0.3s;
 
         border: none;
@@ -94,4 +94,8 @@ section {
             display: block;
         }
     }
+}
+
+.extension {
+    text-align: center;
 }

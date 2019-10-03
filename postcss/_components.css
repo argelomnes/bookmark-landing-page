@@ -1,7 +1,7 @@
 .container {
     max-width: var(--grid-width);
-    padding-right: 3.1rem;
-    padding-left: 3.1rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
 }
 
 .logo {
@@ -16,7 +16,6 @@
 
     border-radius: 4px;
 
-    font-size: 1.7rem;
     font-weight: 500;
     line-height: 4.6rem;
 
@@ -40,6 +39,7 @@
 
     color: var(--dark-blue);
     text-shadow: 0 1px 0 var(--soft-white-dark);
+    box-shadow: 0 5px 8px 1px var(--soft-blue-medium);
 }
 
 .btn-group {
@@ -51,10 +51,30 @@
     margin: 0 auto;
 }
 
-.soft-white-shadow {
+/* .soft-white-shadow {
     box-shadow: 0 5px 8px 1px var(--soft-white-medium);
-}
+} */
 
 .social-icon {
     width: 2.4rem;
+}
+
+.card {
+    border-radius: 12px;
+    box-shadow: 0 5px 8px 1px var(--soft-blue-medium);
+    padding: 2.4rem;
+    width: 90%;
+    margin: 0 auto 4.6rem;
+
+    & img {
+        width: 10rem;
+        margin: 3.2rem auto;
+    }
+}
+
+hr {
+    border: 0;
+    background: url('../images/bg-dots.svg') repeat-x 50% 50%;
+    height: 1rem;
+    margin: 2.4rem -2.4rem;
 }

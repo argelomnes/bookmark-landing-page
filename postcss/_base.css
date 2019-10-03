@@ -172,8 +172,9 @@ h2 {
 }
 
 h3 {
-    font-size: 1.8rem;
-    letter-spacing: -0.1rem;
+    font-size: 2rem;
+    letter-spacing: 0.03rem;
+    margin-bottom: 0.5rem;
     line-height: 1.3;
 }
 
