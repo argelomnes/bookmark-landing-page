@@ -23,9 +23,17 @@ input[type='email'],
 
     padding: 0 1.8rem;
 
+    transition: 0.3s;
+
     font-weight: 500;
 
     cursor: pointer;
+}
+
+.btn:hover,
+.btn:active {
+    position: relative;
+    top: 1px;
 }
 
 .btn-primary {
@@ -36,6 +44,13 @@ input[type='email'],
 
     color: var(--white);
     text-shadow: 0 1px 0 var(--soft-blue-dark);
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-secondary:hover,
+.btn-secondary:active {
+    box-shadow: 0 3px 5px 0 var(--soft-blue-medium);
 }
 
 .btn-secondary {
