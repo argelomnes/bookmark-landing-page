@@ -475,7 +475,26 @@ section {
 }
 .intro {
     text-align: center;
+    position: relative
 }
+.intro .tablet {
+        /* z-index: 10; */
+        position: relative;
+    }
+.intro::after {
+        background-color: hsl(231, 69%, 60%);
+        background-color: var(--soft-blue);
+        display: block;
+        content: '';
+        width: 81vw;
+        border-bottom-left-radius: 100px;
+
+        height: 20.3rem;
+        position: absolute;
+        right: 0;
+        bottom: 32.2rem;
+        z-index: -1;
+    }
 .tablet {
     width: 35rem;
     max-width: 35rem;
@@ -483,7 +502,22 @@ section {
 }
 .features {
     text-align: center;
+    position: relative
 }
+.features::after {
+        background-color: hsl(231, 69%, 60%);
+        background-color: var(--soft-blue);
+        display: block;
+        content: '';
+        width: 81.6vw;
+        border-bottom-right-radius: 100px;
+
+        height: 20.3rem;
+        position: absolute;
+        left: 0;
+        z-index: -1;
+        bottom: 18.7rem;
+    }
 .tab {
     display: flex;
 
