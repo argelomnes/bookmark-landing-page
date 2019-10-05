@@ -4,8 +4,13 @@ section {
 }
 
 .intro {
-    text-align: center;
     position: relative;
+
+    text-align: center;
+
+    @media (--md) {
+        text-align: left;
+    }
 
     & .tablet {
         /* z-index: 10; */
@@ -13,42 +18,80 @@ section {
     }
 
     &::after {
-        background-color: var(--soft-blue);
-        display: block;
         content: '';
-        width: 81vw;
-        border-bottom-left-radius: 100px;
 
-        height: 20.3rem;
+        display: block;
         position: absolute;
+        z-index: -1;
         right: 0;
         bottom: 32.2rem;
-        z-index: -1;
+
+        width: 81vw;
+        height: 20.3rem;
+
+        border-bottom-left-radius: 100px;
+
+        background-color: var(--soft-blue);
+
+        @media (--md) {
+            bottom: 24px;
+
+            width: 35.7vw;
+            height: 35.3rem;
+
+            border-bottom-left-radius: 173px;
+        }
+    }
+
+    @media (--md) {
+        & .container {
+            display: flex;
+
+            & > div {
+                flex: 1;
+
+                padding-top: 83px;
+                padding-right: 40px;
+            }
+        }
     }
 }
 
 .tablet {
-    width: 35rem;
-    max-width: 35rem;
+    min-width: 35rem;
+
+/* max-width: 35rem; */
     margin: 0 -1.8rem 5.5rem;
+
+    @media (--md) {
+        flex: 1;
+        order: 1;
+
+        min-width: 660px;
+        margin-right: -110px;
+    }
 }
 
 .features {
-    text-align: center;
     position: relative;
 
-    &::after {
-        background-color: var(--soft-blue);
-        display: block;
-        content: '';
-        width: 81.6vw;
-        border-bottom-right-radius: 100px;
+    text-align: center;
 
-        height: 20.3rem;
+    &::after {
+        content: '';
+
+        display: block;
         position: absolute;
-        left: 0;
         z-index: -1;
         bottom: 18.7rem;
+        left: 0;
+
+        width: 81.6vw;
+        height: 20.3rem;
+
+        border-bottom-right-radius: 100px;
+
+        background-color: var(--soft-blue);
     }
 }
 
@@ -182,8 +225,8 @@ section {
     color: var(--soft-red);
 }
 
-.active>span+.icon-arrow,
-.accordion:hover>span+.icon-arrow {
+.active > span + .icon-arrow,
+.accordion:hover > span + .icon-arrow {
     transform: rotate(180deg);
 
     stroke: currentColor;
@@ -195,7 +238,7 @@ section {
 
     transition: max-height 0.3s ease-out;
 
-    &>div {
+    & > div {
         padding: 4rem 0 1rem;
     }
 

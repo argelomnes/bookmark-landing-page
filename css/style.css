@@ -51,7 +51,7 @@ body {
     line-height: 1.6;
     text-rendering: optimizeLegibility
 }
-@media (--tablet) {
+@media (min-width: 750px) {
 body {
         font-size: 1.8rem
 }
@@ -164,11 +164,13 @@ h1 {
     letter-spacing: 0;
     line-height: 1.4
 }
-@media (--tablet) {
+@media (min-width: 750px) {
 h1 {
-        margin-bottom: 3rem;
+        margin-bottom: 2.3rem;
 
-        font-size: 4.5rem
+        font-size: 4.6rem;
+        letter-spacing: 0.022em;
+        line-height: 1.13
 }
     }
 h2 {
@@ -178,7 +180,7 @@ h2 {
     letter-spacing: -0.001rem;
     line-height: 1.4
 }
-@media (--tablet) {
+@media (min-width: 750px) {
 h2 {
         margin-bottom: 4rem;
 
@@ -197,8 +199,14 @@ p {
     margin-bottom: 3rem;
 
     letter-spacing: 0.056rem;
-    line-height: 1.8;
+    line-height: 1.8
 }
+@media (min-width: 750px) {
+p {
+        letter-spacing: 0.006rem;
+        line-height: 1.6
+}
+    }
 button,
 input {
     background-color: none;
@@ -208,9 +216,9 @@ input {
 .container {
     max-width: 1114px;
     max-width: var(--grid-width);
+    margin: 0 auto;
     padding-right: 3rem;
-    padding-left: 3rem;
-    margin: 0 auto
+    padding-left: 3rem
 }
 @media (min-width: 992px) {
 .container {
@@ -239,8 +247,17 @@ input[type='email'],
 
     font-weight: 500;
 
-    cursor: pointer;
+    cursor: pointer
 }
+@media (min-width: 750px) {
+.btn {
+        height: 48px;
+        padding: 0 23px;
+
+        font-size: 14px;
+        line-height: 48px
+}
+    }
 .btn:hover,
 .btn:active {
     position: relative;
@@ -286,13 +303,27 @@ input[type='email'],
     text-shadow: 0 1px 0 var(--soft-white-dark);
 }
 .btn-group {
-    display: flex;
+    /* display: flex;
+    justify-content: space-between; */
+    display: grid;
 
-    justify-content: space-between;
+    grid-gap: 16px;
+    grid-template-columns: 1fr 1fr;
 
-    max-width: 31.2rem;
-    margin: 0 auto;
+/* max-width: 31.2rem; */
+
+    max-width: -webkit-max-content;
+
+    max-width: -moz-max-content;
+
+    max-width: max-content;
+    margin: 0 auto
 }
+@media (min-width: 750px) {
+.btn-group {
+        margin: 0
+}
+    }
 .btn-more {
     width: 11.4rem;
     margin: auto;
@@ -345,6 +376,11 @@ hr {
 .site-header {
     margin-bottom: 7.8rem
 }
+@media (min-width: 750px) {
+.site-header {
+        margin-bottom: 10rem
+}
+    }
 .site-header .container {
         display: flex;
 
@@ -568,49 +604,96 @@ section {
     /* margin-bottom: 13.6rem; */
 }
 .intro {
-    text-align: center;
-    position: relative
+    position: relative;
+
+    text-align: center
 }
+@media (min-width: 750px) {
+.intro {
+        text-align: left
+}
+    }
 .intro .tablet {
         /* z-index: 10; */
         position: relative;
     }
 .intro::after {
-        background-color: hsl(231, 69%, 60%);
-        background-color: var(--soft-blue);
-        display: block;
         content: '';
-        width: 81vw;
-        border-bottom-left-radius: 100px;
 
-        height: 20.3rem;
+        display: block;
         position: absolute;
+        z-index: -1;
         right: 0;
         bottom: 32.2rem;
-        z-index: -1;
+
+        width: 81vw;
+        height: 20.3rem;
+
+        border-bottom-left-radius: 100px;
+
+        background-color: hsl(231, 69%, 60%);
+
+        background-color: var(--soft-blue)
+    }
+@media (min-width: 750px) {
+.intro::after {
+            bottom: 24px;
+
+            width: 35.7vw;
+            height: 35.3rem;
+
+            border-bottom-left-radius: 173px
+    }
+        }
+@media (min-width: 750px) {
+        .intro .container {
+            display: flex
+        }
+
+            .intro .container > div {
+                flex: 1;
+
+                padding-top: 83px;
+                padding-right: 40px;
+            }
     }
 .tablet {
-    width: 35rem;
-    max-width: 35rem;
-    margin: 0 -1.8rem 5.5rem;
+    min-width: 35rem;
+
+/* max-width: 35rem; */
+    margin: 0 -1.8rem 5.5rem
 }
+@media (min-width: 750px) {
+.tablet {
+        flex: 1;
+        order: 1;
+
+        min-width: 660px;
+        margin-right: -110px
+}
+    }
 .features {
-    text-align: center;
-    position: relative
+    position: relative;
+
+    text-align: center
 }
 .features::after {
-        background-color: hsl(231, 69%, 60%);
-        background-color: var(--soft-blue);
-        display: block;
         content: '';
-        width: 81.6vw;
-        border-bottom-right-radius: 100px;
 
-        height: 20.3rem;
+        display: block;
         position: absolute;
-        left: 0;
         z-index: -1;
         bottom: 18.7rem;
+        left: 0;
+
+        width: 81.6vw;
+        height: 20.3rem;
+
+        border-bottom-right-radius: 100px;
+
+        background-color: hsl(231, 69%, 60%);
+
+        background-color: var(--soft-blue);
     }
 .tab {
     display: flex;
@@ -740,8 +823,8 @@ section {
     color: hsl(0, 94%, 66%);
     color: var(--soft-red);
 }
-.active>span+.icon-arrow,
-.accordion:hover>span+.icon-arrow {
+.active > span + .icon-arrow,
+.accordion:hover > span + .icon-arrow {
     transform: rotate(180deg);
 
     stroke: currentColor;
@@ -752,7 +835,7 @@ section {
 
     transition: max-height 0.3s ease-out
 }
-.panel>div {
+.panel > div {
         padding: 4rem 0 1rem;
     }
 .panel p {

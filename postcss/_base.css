@@ -24,7 +24,7 @@ body {
     line-height: 1.6;
     text-rendering: optimizeLegibility;
 
-    @media (--tablet) {
+    @media (--md) {
         font-size: 1.8rem;
     }
 }
@@ -151,10 +151,12 @@ h1 {
     letter-spacing: 0;
     line-height: 1.4;
 
-    @media (--tablet) {
-        margin-bottom: 3rem;
+    @media (--md) {
+        margin-bottom: 2.3rem;
 
-        font-size: 4.5rem;
+        font-size: 4.6rem;
+        letter-spacing: 0.022em;
+        line-height: 1.13;
     }
 }
 
@@ -165,7 +167,7 @@ h2 {
     letter-spacing: -0.001rem;
     line-height: 1.4;
 
-    @media (--tablet) {
+    @media (--md) {
         margin-bottom: 4rem;
 
         font-size: 2.4rem;
@@ -186,6 +188,11 @@ p {
 
     letter-spacing: 0.056rem;
     line-height: 1.8;
+
+    @media (--md) {
+        letter-spacing: 0.006rem;
+        line-height: 1.6;
+    }
 }
 
 button,

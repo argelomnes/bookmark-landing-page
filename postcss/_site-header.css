@@ -1,6 +1,10 @@
 .site-header {
     margin-bottom: 7.8rem;
 
+    @media (--md) {
+        margin-bottom: 10rem;
+    }
+
     & .container {
         display: flex;
 

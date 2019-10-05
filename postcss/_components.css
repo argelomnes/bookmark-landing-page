@@ -1,8 +1,8 @@
 .container {
     max-width: var(--grid-width);
+    margin: 0 auto;
     padding-right: 3rem;
     padding-left: 3rem;
-    margin: 0 auto;
 
     @media (--lg) {
         padding-right: 0;
@@ -34,6 +34,14 @@ input[type='email'],
     font-weight: 500;
 
     cursor: pointer;
+
+    @media (--md) {
+        height: 48px;
+        padding: 0 23px;
+
+        font-size: 14px;
+        line-height: 48px;
+    }
 }
 
 .btn:hover,
@@ -70,12 +78,20 @@ input[type='email'],
 }
 
 .btn-group {
-    display: flex;
+    /* display: flex;
+    justify-content: space-between; */
+    display: grid;
 
-    justify-content: space-between;
+    grid-gap: 16px;
+    grid-template-columns: 1fr 1fr;
 
-    max-width: 31.2rem;
+/* max-width: 31.2rem; */
+
+    max-width: max-content;
     margin: 0 auto;
+    @media (--md) {
+        margin: 0;
+    }
 }
 
 .btn-more {
