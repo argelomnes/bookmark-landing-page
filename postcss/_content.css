@@ -182,8 +182,8 @@ section {
     color: var(--soft-red);
 }
 
-.active > span + .icon-arrow,
-.accordion:hover > span + .icon-arrow {
+.active>span+.icon-arrow,
+.accordion:hover>span+.icon-arrow {
     transform: rotate(180deg);
 
     stroke: currentColor;
@@ -195,7 +195,7 @@ section {
 
     transition: max-height 0.3s ease-out;
 
-    & > div {
+    &>div {
         padding: 4rem 0 1rem;
     }
 

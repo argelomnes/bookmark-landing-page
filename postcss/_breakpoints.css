@@ -1,5 +1,0 @@
-@custom-media --phone-s (width >= 375px);
-@custom-media --phone (width >= 500px);
-@custom-media --tablet (width >= 750px);
-@custom-media --laptop (width >= 992px);
-@custom-media --desktop (width >= 1200px);
