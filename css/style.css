@@ -258,6 +258,7 @@ input[type='email'],
 @media (min-width: 750px) {
 .btn {
         height: 48px;
+        margin: auto;
         padding: 0 23px;
 
         font-size: 14px;
@@ -316,7 +317,7 @@ input[type='email'],
     grid-gap: 16px;
     grid-template-columns: 1fr 1fr;
 
-/* max-width: 31.2rem; */
+    /* max-width: 31.2rem; */
 
     max-width: -webkit-max-content;
 
@@ -356,21 +357,6 @@ input[type='email'],
 .social-icon {
     width: 2.4rem;
 }
-.card {
-    width: 90%;
-    margin: 0 auto 4.6rem;
-    padding: 2.4rem;
-
-    border-radius: 12px;
-
-    box-shadow: 0 5px 8px 1px hsl(231, 69%, 60%, 0.2);
-
-    box-shadow: 0 5px 8px 1px var(--soft-blue-medium)
-}
-.card img {
-        width: 10rem;
-        margin: 3.2rem auto;
-    }
 hr {
     height: 1rem;
     margin: 2.4rem -2.4rem;
@@ -660,7 +646,7 @@ section {
             display: flex
         }
 
-            .intro .container > div {
+            .intro .container>div {
                 flex: 1;
 
                 padding-top: 83px;
@@ -670,7 +656,7 @@ section {
 .tablet {
     min-width: 35rem;
 
-/* max-width: 35rem; */
+    /* max-width: 35rem; */
     margin: 0 -1.8rem 5.5rem
 }
 @media (min-width: 750px) {
@@ -717,7 +703,11 @@ section {
     }
         }
 @media (min-width: 750px) {
-        .features .container > p {
+.features {
+        margin-bottom: 150px
+}
+
+        .features .container>p {
             max-width: 540px;
             margin: 0 auto 3rem;
         }
@@ -841,7 +831,7 @@ section {
         text-align: left
 }
 
-        .tabcontent > div {
+        .tabcontent>div {
             padding-top: 62px;
             padding-left: 43px;
         }
@@ -873,8 +863,55 @@ section {
     margin-left: auto;
 }
 .extension {
-    text-align: center;
+    text-align: center
 }
+@media (min-width: 750px) {
+        .extension .container>p {
+            max-width: 540px;
+            margin: 0 auto 3rem;
+        }
+    }
+@media (min-width: 750px) {
+.card-wrapper {
+
+        display: flex;
+        justify-content: center;
+        align-items: center
+}
+    }
+.card {
+    width: 90%;
+    margin: 0 auto 4.6rem;
+    padding: 2.4rem;
+    max-width: 280px;
+    border-radius: 12px;
+
+    box-shadow: 0 5px 8px 1px hsl(231, 69%, 60%, 0.2);
+
+    box-shadow: 0 5px 8px 1px var(--soft-blue-medium)
+}
+@media (min-width: 750px) {
+.card {
+        margin-left: 1.6rem;
+        margin-right: 1.6rem
+}
+    }
+.card img {
+        width: 10rem;
+        margin: 3.2rem auto;
+    }
+.card .btn {
+        width: 100%;
+    }
+@media (min-width: 750px) {
+        .card:nth-child(2) {
+            margin-top: 78px;
+        }
+
+        .card:nth-child(3) {
+            margin-top: 156px;
+        }
+    }
 .faq {
     text-align: center;
 }
@@ -918,8 +955,8 @@ section {
     color: hsl(0, 94%, 66%);
     color: var(--soft-red);
 }
-.active > span + .icon-arrow,
-.accordion:hover > span + .icon-arrow {
+.active>span+.icon-arrow,
+.accordion:hover>span+.icon-arrow {
     transform: rotate(180deg);
 
     stroke: currentColor;
@@ -930,7 +967,7 @@ section {
 
     transition: max-height 0.3s ease-out
 }
-.panel > div {
+.panel>div {
         padding: 4rem 0 1rem;
     }
 .panel p {

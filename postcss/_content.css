@@ -50,7 +50,7 @@ section {
         & .container {
             display: flex;
 
-            & > div {
+            &>div {
                 flex: 1;
 
                 padding-top: 83px;
@@ -63,7 +63,7 @@ section {
 .tablet {
     min-width: 35rem;
 
-/* max-width: 35rem; */
+    /* max-width: 35rem; */
     margin: 0 -1.8rem 5.5rem;
 
     @media (--md) {
@@ -108,7 +108,9 @@ section {
     }
 
     @media (--md) {
-        & .container > p {
+        margin-bottom: 150px;
+
+        & .container>p {
             max-width: 540px;
             margin: 0 auto 3rem;
         }
@@ -221,7 +223,7 @@ section {
 
         text-align: left;
 
-        & > div {
+        &>div {
             padding-top: 62px;
             padding-left: 43px;
         }
@@ -258,6 +260,58 @@ section {
 
 .extension {
     text-align: center;
+
+    @media (--md) {
+        & .container>p {
+            max-width: 540px;
+            margin: 0 auto 3rem;
+        }
+    }
+}
+
+.card-wrapper {
+
+
+    @media (--md) {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.card {
+    width: 90%;
+    margin: 0 auto 4.6rem;
+    padding: 2.4rem;
+    max-width: 280px;
+    border-radius: 12px;
+
+    box-shadow: 0 5px 8px 1px var(--soft-blue-medium);
+
+    @media (--md) {
+        margin-left: 1.6rem;
+        margin-right: 1.6rem;
+    }
+
+    & img {
+        width: 10rem;
+        margin: 3.2rem auto;
+    }
+
+    & .btn {
+        width: 100%;
+    }
+
+    @media (--md) {
+        &:nth-child(2) {
+            margin-top: 78px;
+        }
+
+        &:nth-child(3) {
+            margin-top: 156px;
+        }
+    }
 }
 
 .faq {
@@ -304,8 +358,8 @@ section {
     color: var(--soft-red);
 }
 
-.active > span + .icon-arrow,
-.accordion:hover > span + .icon-arrow {
+.active>span+.icon-arrow,
+.accordion:hover>span+.icon-arrow {
     transform: rotate(180deg);
 
     stroke: currentColor;
@@ -317,7 +371,7 @@ section {
 
     transition: max-height 0.3s ease-out;
 
-    & > div {
+    &>div {
         padding: 4rem 0 1rem;
     }
 
