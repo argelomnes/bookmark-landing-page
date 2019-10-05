@@ -10,7 +10,7 @@ function openTab(evt, tabNumber) {
     for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(' active', '');
     }
-    document.getElementById(tabNumber).style.display = 'block';
+    document.getElementById(tabNumber).style.display = 'grid';
     evt.currentTarget.className += ' active';
 }
 

@@ -1,6 +1,9 @@
 section {
     margin-bottom: 15rem;
-    /* margin-bottom: 13.6rem; */
+
+    @media (--md) {
+        margin-bottom: 6rem;
+    }
 }
 
 .intro {
@@ -92,6 +95,23 @@ section {
         border-bottom-right-radius: 100px;
 
         background-color: var(--soft-blue);
+
+        @media (--md) {
+            top: 420px;
+
+            width: 44.4vw;
+            height: 35.2rem;
+
+            border-top-right-radius: 140px;
+            border-bottom-right-radius: 173px;
+        }
+    }
+
+    @media (--md) {
+        & .container > p {
+            max-width: 540px;
+            margin: 0 auto 3rem;
+        }
     }
 }
 
@@ -102,11 +122,26 @@ section {
 
     margin-top: 3.8rem;
 
-    & li {
-        border-top: solid 1px var(--gray-blue-light);
+    @media (--md) {
+        flex-direction: row;
 
-        &:last-child {
-            border-bottom: solid 1px var(--gray-blue-light);
+        width: max-content;
+        margin-top: 5rem;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    & li {
+        border-bottom: solid 1px var(--gray-blue-light);
+
+        &:first-child {
+            border-top: solid 1px var(--gray-blue-light);
+
+            @media (--md) {
+                margin: 0 -1px;
+
+                border-top: 0;
+            }
         }
     }
 
@@ -128,6 +163,13 @@ section {
         line-height: 5.7rem;
 
         cursor: pointer;
+
+        @media (--md) {
+            height: 7.6rem;
+            padding: 0 55px;
+
+            line-height: 7.6rem;
+        }
 
         &:hover,
         &.active {
@@ -157,6 +199,10 @@ section {
             width: 46%;
 
             color: var(--dark-blue);
+
+            @media (--md) {
+                width: 100%;
+            }
         }
     }
 }
@@ -164,17 +210,50 @@ section {
 .tabcontent {
     padding-top: 7.2rem;
 
+    @media (--md) {
+        display: grid;
+
+        grid-column-gap: 81px;
+        grid-template-columns: 1fr 0.9fr;
+
+        padding-top: 8rem;
+        padding-bottom: 72px;
+
+        text-align: left;
+
+        & > div {
+            padding-top: 62px;
+            padding-left: 43px;
+        }
+    }
+
     & img {
         margin-bottom: 7.5rem;
+
+        @media (--md) {
+            margin-bottom: 0;
+        }
     }
 
     & .btn {
         display: none;
 
-        @media (--tablet) {
+        @media (--md) {
             display: block;
         }
     }
+}
+
+#tab-02 img {
+    width: inherit;
+    height: 392px;
+    margin-left: 24%;
+}
+
+#tab-03 img {
+    width: inherit;
+    width: 438px;
+    margin-left: auto;
 }
 
 .extension {

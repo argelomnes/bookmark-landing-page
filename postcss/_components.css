@@ -27,6 +27,7 @@ input[type='email'],
 .btn {
     display: block;
 
+    width: max-content;
     padding: 0 1.8rem;
 
     transition: 0.3s;
@@ -89,6 +90,7 @@ input[type='email'],
 
     max-width: max-content;
     margin: 0 auto;
+
     @media (--md) {
         margin: 0;
     }

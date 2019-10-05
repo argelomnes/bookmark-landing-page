@@ -182,9 +182,10 @@ h2 {
 }
 @media (min-width: 750px) {
 h2 {
-        margin-bottom: 4rem;
+        margin-bottom: 2rem;
 
-        font-size: 2.4rem
+        font-size: 3rem;
+        letter-spacing: 0.089rem
 }
     }
 h3 {
@@ -241,6 +242,11 @@ input[type='email'],
 .btn {
     display: block;
 
+    width: -webkit-max-content;
+
+    width: -moz-max-content;
+
+    width: max-content;
     padding: 0 1.8rem;
 
     transition: 0.3s;
@@ -600,9 +606,13 @@ hr {
     }
         }
 section {
-    margin-bottom: 15rem;
-    /* margin-bottom: 13.6rem; */
+    margin-bottom: 15rem
 }
+@media (min-width: 750px) {
+section {
+        margin-bottom: 6rem
+}
+    }
 .intro {
     position: relative;
 
@@ -693,7 +703,24 @@ section {
 
         background-color: hsl(231, 69%, 60%);
 
-        background-color: var(--soft-blue);
+        background-color: var(--soft-blue)
+    }
+@media (min-width: 750px) {
+.features::after {
+            top: 420px;
+
+            width: 44.4vw;
+            height: 35.2rem;
+
+            border-top-right-radius: 140px;
+            border-bottom-right-radius: 173px
+    }
+        }
+@media (min-width: 750px) {
+        .features .container > p {
+            max-width: 540px;
+            margin: 0 auto 3rem;
+        }
     }
 .tab {
     display: flex;
@@ -702,14 +729,35 @@ section {
 
     margin-top: 3.8rem
 }
-.tab li {
-        border-top: solid 1px #dde0e9;
-        border-top: solid 1px var(--gray-blue-light)
+@media (min-width: 750px) {
+.tab {
+        flex-direction: row;
+
+        width: -webkit-max-content;
+
+        width: -moz-max-content;
+
+        width: max-content;
+        margin-top: 5rem;
+        margin-right: auto;
+        margin-left: auto
+}
     }
-.tab li:last-child {
-            border-bottom: solid 1px #dde0e9;
-            border-bottom: solid 1px var(--gray-blue-light);
+.tab li {
+        border-bottom: solid 1px #dde0e9;
+        border-bottom: solid 1px var(--gray-blue-light)
+    }
+.tab li:first-child {
+            border-top: solid 1px #dde0e9;
+            border-top: solid 1px var(--gray-blue-light)
         }
+@media (min-width: 750px) {
+.tab li:first-child {
+                margin: 0 -1px;
+
+                border-top: 0
+        }
+            }
 .tab button {
         display: block;
         position: relative;
@@ -731,6 +779,14 @@ section {
 
         cursor: pointer
     }
+@media (min-width: 750px) {
+.tab button {
+            height: 7.6rem;
+            padding: 0 55px;
+
+            line-height: 7.6rem
+    }
+        }
 .tab button:hover,
         .tab button.active {
             color: hsl(229, 31%, 21%);
@@ -761,22 +817,61 @@ section {
 
             color: hsl(229, 31%, 21%);
 
-            color: var(--dark-blue);
+            color: var(--dark-blue)
         }
+@media (min-width: 750px) {
+.tab button.active::before,
+        .tab button:hover::before {
+                width: 100%
+        }
+            }
 .tabcontent {
     padding-top: 7.2rem
 }
-.tabcontent img {
-        margin-bottom: 7.5rem;
+@media (min-width: 750px) {
+.tabcontent {
+        display: grid;
+
+        grid-column-gap: 81px;
+        grid-template-columns: 1fr 0.9fr;
+
+        padding-top: 8rem;
+        padding-bottom: 72px;
+
+        text-align: left
+}
+
+        .tabcontent > div {
+            padding-top: 62px;
+            padding-left: 43px;
+        }
     }
+.tabcontent img {
+        margin-bottom: 7.5rem
+    }
+@media (min-width: 750px) {
+.tabcontent img {
+            margin-bottom: 0
+    }
+        }
 .tabcontent .btn {
         display: none
     }
-@media (--tablet) {
+@media (min-width: 750px) {
 .tabcontent .btn {
             display: block
     }
         }
+#tab-02 img {
+    width: inherit;
+    height: 392px;
+    margin-left: 24%;
+}
+#tab-03 img {
+    width: inherit;
+    width: 438px;
+    margin-left: auto;
+}
 .extension {
     text-align: center;
 }
