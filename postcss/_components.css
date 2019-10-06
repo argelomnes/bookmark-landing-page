@@ -14,14 +14,15 @@
     width: 14.8rem;
 }
 
+input[type='email'] {
+    height: 4.6rem;
+    line-height: 4.6rem;
+}
+
 input[type='email'],
 .btn {
-    height: 4.6rem;
-
     border: solid 1px currentColor;
     border-radius: 4px;
-
-    line-height: 4.6rem;
 }
 
 .btn {
@@ -33,16 +34,17 @@ input[type='email'],
     transition: 0.3s;
 
     font-weight: 500;
-
+    height: 4.7rem;
+    line-height: 4.7rem;
     cursor: pointer;
 
     @media (--xl) {
-        height: 4.8rem;
+
         margin: auto;
         padding: 0 2.3rem;
 
         font-size: 1.4rem;
-        line-height: 4.8rem;
+
     }
 }
 
@@ -84,7 +86,7 @@ input[type='email'],
     justify-content: space-between; */
     display: grid;
 
-    grid-gap: 1.6rem;
+    grid-column-gap: 1.6rem;
     grid-template-columns: 1fr 1fr;
 
     /* max-width: 31.2rem; */
@@ -133,6 +135,6 @@ hr {
 }
 
 p.wrap {
-    max-width: 54rem;
+    max-width: 49rem;
     margin: 0 auto 3rem;
 }
