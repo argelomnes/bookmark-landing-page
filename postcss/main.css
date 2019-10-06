@@ -3,6 +3,10 @@
 @import '_base';
 @import '_components';
 @import '_site-header';
-@import '_content';
+@import '_intro';
+@import '_features';
+@import '_extension';
+@import '_faq';
+@import '_sign-up';
 @import '_site-footer';
 @import '_misc';
