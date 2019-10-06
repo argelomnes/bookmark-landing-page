@@ -1005,7 +1005,7 @@ section {
         }
 .sign-up {
     margin-bottom: 0;
-    padding: 6.7rem 0 6rem;
+    padding: 6.7rem 0 5rem;
 
     background-color: hsl(231, 69%, 60%);
 
@@ -1141,25 +1141,47 @@ input:focus:invalid {
 
     text-align: center
 }
+@media (min-width: 992px) {
+.site-footer {
+        padding-top: 2.6rem
+}
+    }
 .site-footer .container {
         display: flex;
 
         flex-direction: column;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-between
     }
+@media (min-width: 992px) {
+.site-footer .container {
+            flex-direction: row
+    }
+        }
 .site-footer .social {
         display: flex;
 
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
 
-        width: 12.8rem;
-        margin: auto auto 4rem;
+        width: 9rem;
+        margin: auto auto 4rem
     }
+@media (min-width: 992px) {
+.site-footer .social {
+            margin: 0
+    }
+        }
 .site-footer-nav {
     margin: 4rem 0 3rem
 }
+@media (min-width: 992px) {
+.site-footer-nav {
+        display: flex;
+
+        margin: 0 auto 0 65px
+}
+    }
 .site-footer-nav a {
         display: block;
 
@@ -1173,7 +1195,14 @@ input:focus:invalid {
         letter-spacing: 0.3rem;
         line-height: 4rem;
         text-transform: uppercase;
+        font-size: 14px
     }
+@media (min-width: 992px) {
+.site-footer-nav a {
+            margin-right: 42px;
+            font-size: 13px
+    }
+        }
 .attribution {
     margin: 1.5rem 0 0;
 
