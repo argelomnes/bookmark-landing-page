@@ -5,7 +5,7 @@
 
     text-align: center;
 
-    @media (--lg) {
+    @media (--md) {
         padding-top: 2.6rem;
     }
 
@@ -16,7 +16,7 @@
         align-items: center;
         justify-content: space-between;
 
-        @media (--lg) {
+        @media (--md) {
             flex-direction: row;
         }
     }
@@ -30,7 +30,7 @@
         width: 9rem;
         margin: auto auto 4rem;
 
-        @media (--lg) {
+        @media (--md) {
             margin: 0;
         }
     }
@@ -44,7 +44,7 @@
 .site-footer-nav {
     margin: 4rem 0 3rem;
 
-    @media (--lg) {
+    @media (--md) {
         display: flex;
 
         margin: 0 auto 0 6.5rem;
@@ -58,17 +58,18 @@
         transition: 0.2s;
 
         color: var(--white);
+        font-size: 1.4rem;
         letter-spacing: 0.3rem;
         line-height: 3.9rem;
         text-transform: uppercase;
-        font-size: 1.4rem;
 
         &:hover {
             color: var(--soft-red);
         }
 
-        @media (--lg) {
+        @media (--md) {
             margin-right: 4.2rem;
+
             font-size: 1.3rem;
         }
     }

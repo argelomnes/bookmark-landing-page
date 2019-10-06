@@ -1,7 +1,7 @@
 .site-header {
     margin-bottom: 7.8rem;
 
-    @media (--xl) {
+    @media (--md) {
         margin-bottom: 10rem;
     }
 
@@ -13,7 +13,7 @@
 
         margin-top: 4rem;
 
-        @media (--xl) {
+        @media (--md) {
             margin-top: 4.8rem;
         }
     }
@@ -27,7 +27,7 @@
         width: 12.8rem;
         margin: auto auto 4rem;
 
-        @media (--xl) {
+        @media (--md) {
             display: none;
         }
     }
@@ -50,7 +50,7 @@
 
     cursor: pointer;
 
-    @media (--xl) {
+    @media (--md) {
         display: none;
     }
 
@@ -121,7 +121,7 @@
     opacity: 0;
     background: var(--dark-blue-transparent);
 
-    @media (--xl) {
+    @media (--md) {
         position: static;
 
         flex-direction: row;
@@ -141,7 +141,7 @@
 .site-nav {
     margin-top: 4rem;
 
-    @media (--xl) {
+    @media (--md) {
         display: flex;
 
         align-items: baseline;
@@ -152,25 +152,31 @@
     }
 
     & .login {
-        box-shadow: 0 5px 8px 1px var(--soft-blue-medium);
         padding: 0 3rem;
+
         border: solid 2px currentcolor;
         border-radius: 5px;
+
+        box-shadow: 0 5px 8px 1px var(--soft-blue-medium);
+
         color: var(--white);
         font-weight: 500;
 
-        @media (--xl) {
+        @media (--md) {
             border-color: var(--soft-red);
+
             background-color: var(--soft-red);
 
             color: var(--white);
 
             &:hover,
             &:active {
-                color: var(--soft-red);
                 border-color: currentcolor;
+
                 background-color: var(--white);
                 box-shadow: 0 3px 5px 0 var(--soft-blue-medium);
+
+                color: var(--soft-red);
             }
         }
     }
@@ -182,7 +188,7 @@
             padding-top: 2.4rem;
         }
 
-        @media (--xl) {
+        @media (--md) {
             border: 0;
 
             &:last-child {
@@ -204,7 +210,7 @@
         line-height: 6.4rem;
         text-transform: uppercase;
 
-        @media (--xl) {
+        @media (--md) {
             height: 4rem;
             padding: 0 1rem;
 
