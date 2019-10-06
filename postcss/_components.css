@@ -16,12 +16,12 @@
 
 input[type='email'] {
     height: 4.6rem;
-    line-height: 4.6rem;
+    line-height: 4.5rem;
 }
 
 input[type='email'],
 .btn {
-    border: solid 1px currentColor;
+    border: solid 2px currentColor;
     border-radius: 4px;
 }
 
@@ -35,33 +35,33 @@ input[type='email'],
 
     font-weight: 500;
     height: 4.7rem;
-    line-height: 4.7rem;
+    line-height: 4.6rem;
     cursor: pointer;
 
     @media (--xl) {
-
         margin: auto;
         padding: 0 2.3rem;
 
         font-size: 1.4rem;
-
     }
 }
 
-.btn:hover,
-.btn:active {
-    position: relative;
-    top: 1px;
-}
-
 .btn-primary {
-    border: solid 1px var(--soft-blue-dark);
+    border-color: var(--soft-blue-dark);
 
     background-color: var(--soft-blue);
     box-shadow: 0 5px 8px 1px var(--soft-blue-medium);
 
     color: var(--white);
     text-shadow: 0 1px 0 var(--soft-blue-dark);
+
+    &:hover,
+    &:active {
+        color: var(--soft-blue);
+        border-color: var(--soft-blue-dark);
+        background-color: transparent;
+        text-shadow: none;
+    }
 }
 
 .btn-primary:hover,
@@ -72,13 +72,21 @@ input[type='email'],
 }
 
 .btn-secondary {
-    border: solid 1px var(--soft-white-dark);
+    border-color: var(--soft-white-dark);
 
     background-color: var(--soft-white);
     box-shadow: 0 5px 8px 1px var(--soft-blue-medium);
 
     color: var(--dark-blue);
     text-shadow: 0 1px 0 var(--soft-white-dark);
+
+    &:hover,
+    &:active {
+        color: var(--gray);
+        border-color: currentcolor;
+        background-color: transparent;
+        text-shadow: none;
+    }
 }
 
 .btn-group {
@@ -112,18 +120,17 @@ input[type='email'],
     background-color: var(--soft-red);
 
     color: var(--white);
-    line-height: 4.8rem;
-}
+    line-height: 4.7rem;
+    width: 100%;
 
-/* .soft-white-shadow {
-    box-shadow: 0 5px 8px 1px var(--soft-white-medium);
-} */
+    @media (--lg) {
+        width: max-content;
+    }
+}
 
 .social-icon {
     width: 2.4rem;
 }
-
-
 
 hr {
     height: 1rem;

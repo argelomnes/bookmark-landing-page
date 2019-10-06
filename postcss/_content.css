@@ -162,7 +162,7 @@ section {
 
         color: var(--gray);
         font-size: 1.7rem;
-        line-height: 5.7rem;
+        line-height: 5.6rem;
 
         cursor: pointer;
 
@@ -170,12 +170,11 @@ section {
             height: 7.6rem;
             padding: 0 55px;
 
-            line-height: 7.6rem;
+            line-height: 7.5rem;
         }
 
-        &:hover,
-        &.active {
-            color: var(--dark-blue);
+        &:hover {
+            color: var(--soft-red);
         }
 
         &::before {
@@ -194,6 +193,10 @@ section {
             background-color: var(--soft-red);
 
             will-change: width;
+        }
+
+        &.active {
+            color: var(--dark-blue);
         }
 
         &.active::before,
@@ -255,28 +258,16 @@ section {
 
 #tab-03 img {
     width: inherit;
-    width: 438px;
+    width: 43.8rem;
     margin-left: auto;
 }
 
 .extension {
     text-align: center;
-
-    /*  @media (--xl) {
-     & .container>p {
-         max-width: 540px;
-         margin: 0 auto 3rem;
-     }
- }
-
- */
 }
 
 .card-wrapper {
-
-
     @media (--xl) {
-
         display: flex;
         justify-content: center;
         align-items: center;
@@ -287,7 +278,7 @@ section {
     width: 90%;
     margin: 0 auto 4.6rem;
     padding: 2.4rem;
-    max-width: 280px;
+    max-width: 28rem;
     border-radius: 12px;
 
     box-shadow: 0 5px 8px 1px var(--soft-blue-medium);
@@ -308,11 +299,11 @@ section {
 
     @media (--xl) {
         &:nth-child(2) {
-            margin-top: 78px;
+            margin-top: 7.8rem;
         }
 
         &:nth-child(3) {
-            margin-top: 156px;
+            margin-top: 15.6rem;
         }
     }
 }
@@ -332,9 +323,9 @@ section {
 }
 
 .icon-arrow {
-    width: 18px;
+    width: 1.8rem;
 
-    stroke: #5267df;
+    stroke: var(--soft-blue);
 }
 
 .accordion {
@@ -349,34 +340,27 @@ section {
     transition: 0.3s;
 
     border: 0;
-    border-bottom: solid 1px var(--gray-blue-light);
 
     background-color: var(--white);
 
     font-size: 1.5rem;
-    line-height: 6rem;
+    line-height: 5.9rem;
 
     cursor: pointer;
 
-    @media (--xl) {
-        &:first-child {
-            border-top: solid 1px var(--gray-blue-light);
-        }
+    &:not(:first-child) {
+        border-top: solid 1px var(--gray-blue-light);
+    }
 
-        /* font-size: 1.8rem; */
+    &:hover {
+        color: var(--soft-red);
     }
 }
 
-.active,
-.accordion:hover {
-    color: var(--soft-red);
-}
-
-.active>span+.icon-arrow,
-.accordion:hover>span+.icon-arrow {
+.active>span+.icon-arrow {
     transform: rotate(180deg);
 
-    stroke: currentColor;
+    stroke: var(--soft-red);
 }
 
 .panel {
@@ -386,20 +370,18 @@ section {
     transition: max-height 0.3s ease-out;
 
     &>div {
-        padding: 4rem 0 1rem;
+        padding: 2rem 0 1rem;
     }
 
     & p {
         letter-spacing: 0.069rem;
         line-height: 2;
 
-        @media(--xl) {
-            font-size: 15px;
-
+        @media (--xl) {
+            font-size: 1.5rem;
         }
     }
 }
-
 
 .sign-up {
     margin-bottom: 0;
@@ -418,20 +400,20 @@ section {
 
         @media (--lg) {
             max-width: 44rem;
-            margin: 35px auto 3.5rem;
+            margin: 3.5rem auto 3.5rem;
             line-height: 1.3;
         }
     }
 }
 
 .extra-info {
-    margin-bottom: 5px;
+    margin-bottom: 0.5rem;
 
     letter-spacing: 0.326rem;
     text-transform: uppercase;
 
     @media (--lg) {
-        font-size: 14px;
+        font-size: 1.4rem;
         letter-spacing: 0.418rem;
     }
 }
@@ -453,7 +435,14 @@ form {
 
         & .btn {
             margin-top: 0;
-            margin-left: 15px;
+            margin-left: 1.5rem;
+
+            &:hover,
+            &:active {
+                color: var(--soft-red);
+                border-color: currentcolor;
+                background-color: var(--white);
+            }
         }
     }
 }
@@ -471,7 +460,7 @@ input[type='email'] {
 
     color: var(--gray-blue);
     font-size: 1.4rem;
-    min-width: 300px;
+    min-width: 30rem;
 }
 
 input:focus {
@@ -492,7 +481,7 @@ input:focus:invalid {
     display: block;
 
     width: 100%;
-    margin-top: -5px;
+    margin-top: -0.5rem;
     padding: 0;
 
     border-radius: 0 0 5px 5px;
@@ -509,9 +498,5 @@ input:focus:invalid {
 }
 
 .error.active {
-    padding: 1.3rem 1.2rem 0.6rem;
-
-    @media (--lg) {
-        padding: 8px 13px;
-    }
+    padding: 0.8rem 1.2rem 0.5rem;
 }

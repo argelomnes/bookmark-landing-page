@@ -52,7 +52,8 @@ svg {
 svg {
     transition: fill 0.3s ease-in-out;
 
-    fill: currentColor;
+    fill: #fff;
+    /* fill: currentColor; */
 }
 
 figure {

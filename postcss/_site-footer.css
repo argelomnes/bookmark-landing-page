@@ -34,6 +34,11 @@
             margin: 0;
         }
     }
+
+    & svg:hover,
+    & svg:active {
+        fill: var(--soft-red);
+    }
 }
 
 .site-footer-nav {
@@ -42,7 +47,7 @@
     @media (--lg) {
         display: flex;
 
-        margin: 0 auto 0 65px;
+        margin: 0 auto 0 6.5rem;
     }
 
     & a {
@@ -54,13 +59,17 @@
 
         color: var(--white);
         letter-spacing: 0.3rem;
-        line-height: 4rem;
+        line-height: 3.9rem;
         text-transform: uppercase;
-        font-size: 14px;
+        font-size: 1.4rem;
+
+        &:hover {
+            color: var(--soft-red);
+        }
 
         @media (--lg) {
-            margin-right: 42px;
-            font-size: 13px;
+            margin-right: 4.2rem;
+            font-size: 1.3rem;
         }
     }
 }

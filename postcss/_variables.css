@@ -1,23 +1,29 @@
 :root {
+    /* colors */
+    --white: #fff;
+    --soft-white: hsl(0, 0%, 96.86%);
+    --soft-white-dark: #f4f4f4;
+    /* --soft-white-medium: #e5e7f4; */
+
     --dark-blue: hsl(229, 31%, 21%);
     --dark-blue-transparent: hsla(229, 31%, 21%, 0.9);
 
-    /* font-family */
-    --font-sans: 'Rubik', sans-serif;
     --gray: #6a6b70;
     --gray-blue: hsl(229, 8%, 60%);
     --gray-blue-light: #dde0e9;
 
-    /* dimension */
-    --grid-width: 1114px;
     --soft-blue: hsl(231, 69%, 60%);
     --soft-blue-dark: #5361b9;
     --soft-blue-medium: hsl(231, 69%, 60%, 0.2);
-    --soft-red: hsl(0, 94%, 66%);
-    --soft-white: hsl(0, 0%, 96.86%);
-    --soft-white-dark: #f4f4f4;
-    --soft-white-medium: #e5e7f4;
 
-    /* colors */
-    --white: #fff;
+    --soft-red: hsl(0, 94%, 66%);
+    --svg-soft-red: ;
+
+
+
+    /* font-family */
+    --font-sans: 'Rubik', sans-serif;
+
+    /* dimension */
+    --grid-width: 1114px;
 }
