@@ -1,7 +1,7 @@
 section {
     margin-bottom: 15rem;
 
-    @media (--md) {
+    @media (--xl) {
         margin-bottom: 6rem;
     }
 }
@@ -11,7 +11,7 @@ section {
 
     text-align: center;
 
-    @media (--md) {
+    @media (--xl) {
         text-align: left;
     }
 
@@ -36,7 +36,7 @@ section {
 
         background-color: var(--soft-blue);
 
-        @media (--md) {
+        @media (--xl) {
             bottom: 24px;
 
             width: 35.7vw;
@@ -46,7 +46,7 @@ section {
         }
     }
 
-    @media (--md) {
+    @media (--xl) {
         & .container {
             display: flex;
 
@@ -66,7 +66,7 @@ section {
     /* max-width: 35rem; */
     margin: 0 -1.8rem 5.5rem;
 
-    @media (--md) {
+    @media (--xl) {
         flex: 1;
         order: 1;
 
@@ -96,7 +96,7 @@ section {
 
         background-color: var(--soft-blue);
 
-        @media (--md) {
+        @media (--xl) {
             top: 420px;
 
             width: 44.4vw;
@@ -107,13 +107,13 @@ section {
         }
     }
 
-    @media (--md) {
+    @media (--xl) {
         margin-bottom: 150px;
 
-        & .container>p {
-            max-width: 540px;
-            margin: 0 auto 3rem;
-        }
+        /*  & .container>p {
+     max-width: 540px;
+     margin: 0 auto 3rem;
+ } */
     }
 }
 
@@ -124,7 +124,7 @@ section {
 
     margin-top: 3.8rem;
 
-    @media (--md) {
+    @media (--xl) {
         flex-direction: row;
 
         width: max-content;
@@ -139,7 +139,7 @@ section {
         &:first-child {
             border-top: solid 1px var(--gray-blue-light);
 
-            @media (--md) {
+            @media (--xl) {
                 margin: 0 -1px;
 
                 border-top: 0;
@@ -166,7 +166,7 @@ section {
 
         cursor: pointer;
 
-        @media (--md) {
+        @media (--xl) {
             height: 7.6rem;
             padding: 0 55px;
 
@@ -202,7 +202,7 @@ section {
 
             color: var(--dark-blue);
 
-            @media (--md) {
+            @media (--xl) {
                 width: 100%;
             }
         }
@@ -212,7 +212,7 @@ section {
 .tabcontent {
     padding-top: 7.2rem;
 
-    @media (--md) {
+    @media (--xl) {
         display: grid;
 
         grid-column-gap: 81px;
@@ -232,7 +232,7 @@ section {
     & img {
         margin-bottom: 7.5rem;
 
-        @media (--md) {
+        @media (--xl) {
             margin-bottom: 0;
         }
     }
@@ -240,8 +240,9 @@ section {
     & .btn {
         display: none;
 
-        @media (--md) {
+        @media (--xl) {
             display: block;
+            margin-left: 0;
         }
     }
 }
@@ -261,18 +262,20 @@ section {
 .extension {
     text-align: center;
 
-    @media (--md) {
-        & .container>p {
-            max-width: 540px;
-            margin: 0 auto 3rem;
-        }
-    }
+    /*  @media (--xl) {
+     & .container>p {
+         max-width: 540px;
+         margin: 0 auto 3rem;
+     }
+ }
+
+ */
 }
 
 .card-wrapper {
 
 
-    @media (--md) {
+    @media (--xl) {
 
         display: flex;
         justify-content: center;
@@ -289,7 +292,7 @@ section {
 
     box-shadow: 0 5px 8px 1px var(--soft-blue-medium);
 
-    @media (--md) {
+    @media (--xl) {
         margin-left: 1.6rem;
         margin-right: 1.6rem;
     }
@@ -303,7 +306,7 @@ section {
         width: 100%;
     }
 
-    @media (--md) {
+    @media (--xl) {
         &:nth-child(2) {
             margin-top: 78px;
         }
@@ -319,10 +322,13 @@ section {
 }
 
 .accordion-content {
-    margin-top: 50px;
-    margin-bottom: 4.8rem;
+    margin: 5rem auto 4.8rem;
 
     text-align: left;
+
+    @media (--xl) {
+        max-width: 54.2rem;
+    }
 }
 
 .icon-arrow {
@@ -351,6 +357,14 @@ section {
     line-height: 6rem;
 
     cursor: pointer;
+
+    @media (--xl) {
+        &:first-child {
+            border-top: solid 1px var(--gray-blue-light);
+        }
+
+        /* font-size: 1.8rem; */
+    }
 }
 
 .active,
@@ -378,8 +392,14 @@ section {
     & p {
         letter-spacing: 0.069rem;
         line-height: 2;
+
+        @media(--xl) {
+            font-size: 15px;
+
+        }
     }
 }
+
 
 .sign-up {
     margin-bottom: 0;

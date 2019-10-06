@@ -24,7 +24,7 @@ body {
     line-height: 1.6;
     text-rendering: optimizeLegibility;
 
-    @media (--md) {
+    @media (--xl) {
         font-size: 1.8rem;
     }
 }
@@ -151,7 +151,7 @@ h1 {
     letter-spacing: 0;
     line-height: 1.4;
 
-    @media (--md) {
+    @media (--xl) {
         margin-bottom: 2.3rem;
 
         font-size: 4.6rem;
@@ -167,7 +167,7 @@ h2 {
     letter-spacing: -0.001rem;
     line-height: 1.4;
 
-    @media (--md) {
+    @media (--xl) {
         margin-bottom: 2rem;
 
         font-size: 3rem;
@@ -190,7 +190,7 @@ p {
     letter-spacing: 0.056rem;
     line-height: 1.8;
 
-    @media (--md) {
+    @media (--xl) {
         letter-spacing: 0.006rem;
         line-height: 1.6;
     }

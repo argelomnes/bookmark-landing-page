@@ -1,7 +1,7 @@
 .site-header {
     margin-bottom: 7.8rem;
 
-    @media (--md) {
+    @media (--xl) {
         margin-bottom: 10rem;
     }
 
@@ -13,7 +13,7 @@
 
         margin-top: 4rem;
 
-        @media (--md) {
+        @media (--xl) {
             margin-top: 48px;
         }
     }
@@ -27,7 +27,7 @@
         width: 12.8rem;
         margin: auto auto 4rem;
 
-        @media (--md) {
+        @media (--xl) {
             display: none;
         }
     }
@@ -50,7 +50,7 @@
 
     cursor: pointer;
 
-    @media (--md) {
+    @media (--xl) {
         display: none;
     }
 
@@ -65,42 +65,42 @@
 }
 
 /* hamburger animation */
-#nav:checked + .nav-toggle {
+#nav:checked+.nav-toggle {
     transform: rotate(45deg);
 }
 
-#nav:checked + .nav-toggle i,
-#nav + .nav-toggle i {
+#nav:checked+.nav-toggle i,
+#nav+.nav-toggle i {
     transition: transform 0.2s ease-out;
 }
 
-#nav:checked + .nav-toggle i:nth-child(1) {
+#nav:checked+.nav-toggle i:nth-child(1) {
     transform: translateY(0.5rem) rotate(180deg);
 
     background-color: var(--white);
 }
 
-#nav:checked + .nav-toggle i:nth-child(2) {
+#nav:checked+.nav-toggle i:nth-child(2) {
     transform: translateY(-5rem);
 
     opacity: 0;
     background-color: var(--white);
 }
 
-#nav:checked + .nav-toggle i:nth-child(3) {
+#nav:checked+.nav-toggle i:nth-child(3) {
     transform: translateY(-0.7rem) rotate(90deg);
 
     background-color: var(--white);
 }
 
-#nav:checked ~ .nav-wrapper {
+#nav:checked~.nav-wrapper {
     z-index: 90;
     top: 0;
 
     opacity: 1;
 }
 
-#nav + .nav-toggle i + .nav {
+#nav+.nav-toggle i+.nav {
     display: hidden;
 }
 
@@ -121,7 +121,7 @@
     opacity: 0;
     background: var(--dark-blue-transparent);
 
-    @media (--md) {
+    @media (--xl) {
         position: static;
 
         flex-direction: row;
@@ -142,7 +142,7 @@
     border: solid 2px var(--white);
     border-radius: 5px;
 
-    @media (--md) {
+    @media (--xl) {
         border-color: var(--soft-red);
 
         background-color: var(--soft-red);
@@ -154,7 +154,7 @@
 .site-nav {
     margin-top: 4rem;
 
-    @media (--md) {
+    @media (--xl) {
         display: flex;
 
         align-items: baseline;
@@ -178,7 +178,7 @@
             padding-top: 2.4rem;
         }
 
-        @media (--md) {
+        @media (--xl) {
             /* margin-left: 28px; */
             border: 0;
 
@@ -201,7 +201,7 @@
         line-height: 6.5rem;
         text-transform: uppercase;
 
-        @media (--md) {
+        @media (--xl) {
             height: 4rem;
             padding: 0 1rem;
 
