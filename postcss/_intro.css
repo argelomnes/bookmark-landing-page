@@ -1,9 +1,7 @@
 .intro {
     position: relative;
 
-    @media (--lg) {
-        margin-bottom: 17.8rem;
-    }
+    margin-bottom: 17.8rem;
 
     & .container {
         display: flex;
@@ -88,10 +86,8 @@
 
     padding: 0 2rem;
 
-    text-align: center;
-
     @media (--xs) {
-        padding: 0 3rem;
+        padding: 0 2rem;
 
         & p {
             padding: 0 1rem;

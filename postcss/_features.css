@@ -3,7 +3,9 @@
 
     margin-bottom: 9.1rem;
 
-    text-align: center;
+    @media (--lg) {
+        margin-bottom: 16.7rem;
+    }
 
     &::after {
         content: '';
@@ -34,15 +36,15 @@
             border-top-right-radius: 17.3rem;
             border-bottom-right-radius: 17.3rem;
         }
+
         @media (--lg) {
             top: 42.1rem;
 
             width: 44.3vw;
             height: 32rem;
         }
+
         @media (--xl) {
-            /* top: 42.1rem;
-            width: 44.3vw; */
             height: 35.2rem;
         }
     }

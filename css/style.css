@@ -3,7 +3,6 @@
     --white: #fff;
     --soft-white: hsl(0, 0%, 96.86%);
     --soft-white-dark: #f4f4f4;
-    /* --soft-white-medium: #e5e7f4; */
 
     --dark-blue: hsl(229, 31%, 21%);
     --dark-blue-transparent: hsla(229, 31%, 21%, 0.9);
@@ -17,9 +16,6 @@
     --soft-blue-medium: hsl(231, 69%, 60%, 0.2);
 
     --soft-red: hsl(0, 94%, 66%);
-    --svg-soft-red: ;
-
-
 
     /* font-family */
     --font-sans: 'Rubik', sans-serif;
@@ -81,40 +77,6 @@ svg {
     transition: fill 0.2s ease-in-out;
 
     fill: #fff;
-    /* fill: currentColor; */
-}
-figure {
-    margin: 1.6rem 0;
-}
-/* alignments */
-.alignleft {
-    margin-right: 2.4rem;
-    float: left;
-}
-.alignright {
-    margin-left: 2.4rem;
-    float: right;
-}
-.aligncenter {
-    display: block;
-
-    margin-right: auto;
-    margin-left: auto;
-    clear: both;
-}
-.clearfix::before,
-.clearfix::after {
-    content: '';
-
-    display: table;
-
-    table-layout: fixed;
-}
-.clearfix::after {
-    clear: both;
-}
-.text-center {
-    text-align: center;
 }
 /* Hide visually and from screen readers */
 .hidden {
@@ -220,8 +182,6 @@ p {
     }
 button,
 input {
-    background-color: none;
-
     font-family: inherit;
 }
 .container {
@@ -244,8 +204,7 @@ input {
 }
     }
 section {
-    margin-bottom: 12rem;
-    /* margin-bottom: 15rem; */
+    text-align: center;
 }
 .logo {
     width: 14.8rem;
@@ -265,8 +224,6 @@ input[type='email'],
     width: max-content;
     height: 4.8rem;
     padding: 0 2.2rem;
-
-/* padding: 0 1.8rem; */
 
     transition: 0.2s;
 
@@ -610,13 +567,10 @@ hr {
             }
         }
 .intro {
-    position: relative
+    position: relative;
+
+    margin-bottom: 17.8rem
 }
-@media (min-width: 960px) {
-.intro {
-        margin-bottom: 17.8rem
-}
-    }
 .intro .container {
         display: flex;
 
@@ -705,13 +659,11 @@ hr {
     flex: 1;
     order: 1;
 
-    padding: 0 2rem;
-
-    text-align: center
+    padding: 0 2rem
 }
 @media (min-width: 375px) {
 .intro-text {
-        padding: 0 3rem
+        padding: 0 2rem
 }
 
         .intro-text p {
@@ -801,10 +753,13 @@ hr {
 .features {
     position: relative;
 
-    margin-bottom: 9.1rem;
-
-    text-align: center
+    margin-bottom: 9.1rem
 }
+@media (min-width: 960px) {
+.features {
+        margin-bottom: 16.7rem
+}
+    }
 .features::after {
         content: '';
 
@@ -849,8 +804,6 @@ hr {
         }
 @media (min-width: 1290px) {
 .features::after {
-            /* top: 42.1rem;
-            width: 44.3vw; */
             height: 35.2rem
     }
         }
@@ -1039,7 +992,7 @@ hr {
 }
     }
 .extension {
-    text-align: center;
+    margin-bottom: 10.6rem;
 }
 @media (min-width: 960px) {
 .card-wrapper {
@@ -1131,7 +1084,7 @@ hr {
         width: 100%;
     }
 .faq {
-    text-align: center
+    margin-bottom: 14.3rem
 }
 .faq .btn {
         margin: auto;
@@ -1151,8 +1104,24 @@ hr {
 
     stroke: hsl(231, 69%, 60%);
 
-    stroke: var(--soft-blue);
+    stroke: var(--soft-blue)
 }
+@media (min-width: 750px) {
+.icon-arrow {
+        margin-top: 0.5rem;
+        margin-right: 2.6rem
+}
+    }
+.accordion-wrap {
+    border-bottom: solid 0.1rem #dde0e9;
+    border-bottom: solid 0.1rem var(--gray-blue-light)
+}
+@media (min-width: 960px) {
+        .accordion-wrap:first-child {
+            border-top: solid 0.1rem #dde0e9;
+            border-top: solid 0.1rem var(--gray-blue-light);
+        }
+    }
 .accordion {
     display: flex;
 
@@ -1176,10 +1145,6 @@ hr {
 
     cursor: pointer
 }
-.accordion:not(:first-child) {
-        border-top: solid 0.1rem #dde0e9;
-        border-top: solid 0.1rem var(--gray-blue-light);
-    }
 .accordion:hover {
         color: hsl(0, 94%, 66%);
         color: var(--soft-red);
@@ -1187,6 +1152,16 @@ hr {
 @media (min-width: 375px) {
 .accordion {
         font-size: 1.5rem
+}
+    }
+@media (min-width: 750px) {
+.accordion {
+        font-size: 1.8rem
+}
+    }
+@media (min-width: 960px) {
+.accordion {
+        height: 7rem
 }
     }
 .active > span + .icon-arrow {
@@ -1226,8 +1201,7 @@ hr {
 
     color: #fff;
 
-    color: var(--white);
-    text-align: center
+    color: var(--white)
 }
 .sign-up h2 {
         margin-bottom: 3.3rem;
@@ -1263,8 +1237,6 @@ form {
     flex-flow: column wrap;
 
     max-width: 44.4rem
-
-
 }
 @media (min-width: 460px) {
 form {
@@ -1272,16 +1244,14 @@ form {
         justify-content: space-between;
 
         margin: auto
-
-
 }
 
         form .btn {
-            margin-top: 0;
-            margin-left: 1.5rem;
             min-width: -webkit-max-content;
             min-width: -moz-max-content;
-            min-width: max-content
+            min-width: max-content;
+            margin-top: 0;
+            margin-left: 1.5rem
         }
 
             form .btn:hover,
@@ -1300,28 +1270,25 @@ form {
 @media (min-width: 960px) {
 form {
         width: 44.4rem
-
-
 }
     }
 form p {
-        width: 100%;
         flex: 1;
 
+        width: 100%;
     }
 form p * {
         display: block;
     }
 input[type='email'] {
-    /* position: relative; */
     width: 100%;
     height: 4.6rem;
     margin: 0;
     padding: 0 1.8rem;
 
-    border: 0.2rem solid #fff;
+    border-color: #fff;
 
-    border: 0.2rem solid var(--white);
+    border-color: var(--white);
 
     background-color: #fff;
 

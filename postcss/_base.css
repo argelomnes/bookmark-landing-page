@@ -52,47 +52,6 @@ svg {
     transition: fill 0.2s ease-in-out;
 
     fill: #fff;
-    /* fill: currentColor; */
-}
-
-figure {
-    margin: 1.6rem 0;
-}
-
-/* alignments */
-.alignleft {
-    margin-right: 2.4rem;
-    float: left;
-}
-
-.alignright {
-    margin-left: 2.4rem;
-    float: right;
-}
-
-.aligncenter {
-    display: block;
-
-    margin-right: auto;
-    margin-left: auto;
-    clear: both;
-}
-
-.clearfix::before,
-.clearfix::after {
-    content: '';
-
-    display: table;
-
-    table-layout: fixed;
-}
-
-.clearfix::after {
-    clear: both;
-}
-
-.text-center {
-    text-align: center;
 }
 
 /* Hide visually and from screen readers */
@@ -202,7 +161,5 @@ p {
 
 button,
 input {
-    background-color: none;
-
     font-family: inherit;
 }

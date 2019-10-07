@@ -1,5 +1,5 @@
 .faq {
-    text-align: center;
+    margin-bottom: 14.3rem;
 
     & .btn {
         margin: auto;
@@ -20,6 +20,21 @@
     width: 1.8rem;
 
     stroke: var(--soft-blue);
+
+    @media (--md) {
+        margin-top: 0.5rem;
+        margin-right: 2.6rem;
+    }
+}
+
+.accordion-wrap {
+    border-bottom: solid 0.1rem var(--gray-blue-light);
+
+    @media (--lg) {
+        &:first-child {
+            border-top: solid 0.1rem var(--gray-blue-light);
+        }
+    }
 }
 
 .accordion {
@@ -43,16 +58,20 @@
 
     cursor: pointer;
 
-    &:not(:first-child) {
-        border-top: solid 0.1rem var(--gray-blue-light);
-    }
-
     &:hover {
         color: var(--soft-red);
     }
 
     @media (--xs) {
         font-size: 1.5rem;
+    }
+
+    @media (--md) {
+        font-size: 1.8rem;
+    }
+
+    @media (--lg) {
+        height: 7rem;
     }
 }
 
