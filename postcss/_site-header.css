@@ -65,42 +65,42 @@
 }
 
 /* hamburger animation */
-#nav:checked + .nav-toggle {
+#nav:checked+.nav-toggle {
     transform: rotate(45deg);
 }
 
-#nav:checked + .nav-toggle i,
-#nav + .nav-toggle i {
+#nav:checked+.nav-toggle i,
+#nav+.nav-toggle i {
     transition: transform 0.2s ease-out;
 }
 
-#nav:checked + .nav-toggle i:nth-child(1) {
+#nav:checked+.nav-toggle i:nth-child(1) {
     transform: translateY(0.5rem) rotate(180deg);
 
     background-color: var(--white);
 }
 
-#nav:checked + .nav-toggle i:nth-child(2) {
+#nav:checked+.nav-toggle i:nth-child(2) {
     transform: translateY(-5rem);
 
     opacity: 0;
     background-color: var(--white);
 }
 
-#nav:checked + .nav-toggle i:nth-child(3) {
+#nav:checked+.nav-toggle i:nth-child(3) {
     transform: translateY(-0.7rem) rotate(90deg);
 
     background-color: var(--white);
 }
 
-#nav:checked ~ .nav-wrapper {
+#nav:checked~.nav-wrapper {
     z-index: 90;
     top: 0;
 
     opacity: 1;
 }
 
-#nav + .nav-toggle i + .nav {
+#nav+.nav-toggle i+.nav {
     display: hidden;
 }
 
@@ -114,12 +114,17 @@
     flex-direction: column;
 
     height: 100vh;
-    padding: 4rem 3rem;
+    padding: 4rem 2rem;
 
     transition: 0.3s cubic-bezier(0.94, 0.06, 0.61, 0.92);
 
     opacity: 0;
     background: var(--dark-blue-transparent);
+
+    @media (--xs) {
+        padding-right: 3rem;
+        padding-left: 3rem;
+    }
 
     @media (--md) {
         position: static;
@@ -154,10 +159,10 @@
     & .login {
         padding: 0 3rem;
 
-        border: solid 2px currentcolor;
-        border-radius: 5px;
+        border: solid 0.2rem currentcolor;
+        border-radius: 0.5rem;
 
-        box-shadow: 0 5px 8px 1px var(--soft-blue-medium);
+        box-shadow: 0 0.5rem 0.8rem 0.1rem var(--soft-blue-medium);
 
         color: var(--white);
         font-weight: 500;
@@ -174,7 +179,7 @@
                 border-color: currentcolor;
 
                 background-color: var(--white);
-                box-shadow: 0 3px 5px 0 var(--soft-blue-medium);
+                box-shadow: 0 0.3rem 0.5rem 0 var(--soft-blue-medium);
 
                 color: var(--soft-red);
             }
@@ -182,7 +187,7 @@
     }
 
     & li {
-        border-top: solid 1px var(--gray-blue);
+        border-top: solid 0.1rem var(--gray-blue);
 
         &:last-child {
             padding-top: 2.4rem;

@@ -1,8 +1,12 @@
-.attribution {
-    margin: 1.5rem 0 0;
+.site-footer.attribution {
+    padding: 0 0 1rem;
 
-    font-size: 1.1rem;
-    text-align: center;
+    & p {
+        margin: 0 auto;
+
+        font-size: 1.1rem;
+        text-align: center;
+    }
 }
 
 .attribution a {

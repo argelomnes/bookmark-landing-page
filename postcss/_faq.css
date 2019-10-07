@@ -1,5 +1,9 @@
 .faq {
     text-align: center;
+
+    & .btn {
+        margin: auto;
+    }
 }
 
 .accordion-content {
@@ -7,7 +11,7 @@
 
     text-align: left;
 
-    @media (--xl) {
+    @media (--md) {
         max-width: 54.2rem;
     }
 }
@@ -33,17 +37,22 @@
 
     background-color: var(--white);
 
-    font-size: 1.5rem;
+    font-size: 1.35rem;
     line-height: 5.9rem;
+    text-align: left;
 
     cursor: pointer;
 
     &:not(:first-child) {
-        border-top: solid 1px var(--gray-blue-light);
+        border-top: solid 0.1rem var(--gray-blue-light);
     }
 
     &:hover {
         color: var(--soft-red);
+    }
+
+    @media (--xs) {
+        font-size: 1.5rem;
     }
 }
 
@@ -64,10 +73,12 @@
     }
 
     & p {
+        max-width: inherit;
+
         letter-spacing: 0.069rem;
         line-height: 2;
 
-        @media (--xl) {
+        @media (--lg) {
             font-size: 1.5rem;
         }
     }

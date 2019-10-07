@@ -1,8 +1,10 @@
 .features {
     position: relative;
 
-    text-align: center;
+    margin-bottom: 9.1rem;
 
+    text-align: center;
+    /*
     &::after {
         content: '';
 
@@ -15,8 +17,8 @@
         width: 81.6vw;
         height: 20.3rem;
 
-        border-top-right-radius: 140px;
-        border-bottom-right-radius: 100px;
+        border-top-right-radius: 14rem;
+        border-bottom-right-radius: 10rem;
 
         background-color: var(--soft-blue);
 
@@ -26,26 +28,24 @@
             width: 74.5vw;
             height: 35.2rem;
 
-            border-top-right-radius: 140px;
-            border-bottom-right-radius: 173px;
+            border-top-right-radius: 14rem;
+            border-bottom-right-radius: 17.3rem;
         }
 
+        @media (--lg) {
+            top: 40rem;
+
+            width: 41.5vw;
+            height: 30rem;
+        }
         @media (--xl) {
             top: 42rem;
 
-            width: 44.4vw;
+            width: 41.5vw;
             height: 35.2rem;
         }
     }
-
-    @media (--xl) {
-        margin-bottom: 150px;
-
-        /*  & .container>p {
-     max-width: 540px;
-     margin: 0 auto 3rem;
- } */
-    }
+    */
 }
 
 .tab {
@@ -55,30 +55,30 @@
 
     margin-top: 3.8rem;
 
-    @media (--xl) {
+    @media (--lg) {
         flex-direction: row;
 
         width: max-content;
-        margin-top: 5rem;
+        margin-top: 4rem;
         margin-right: auto;
         margin-left: auto;
     }
 
     & li {
-        border-bottom: solid 1px var(--gray-blue-light);
+        border-bottom: solid 0.1rem var(--gray-blue-light);
 
         &:first-child {
-            border-top: solid 1px var(--gray-blue-light);
+            border-top: solid 0.1rem var(--gray-blue-light);
 
-            @media (--xl) {
-                margin: 0 -1px;
+            @media (--lg) {
+                margin: 0;
 
                 border-top: 0;
             }
         }
     }
 
-    & button {
+    & .tablinks {
         display: block;
         position: relative;
 
@@ -97,9 +97,9 @@
 
         cursor: pointer;
 
-        @media (--xl) {
+        @media (--lg) {
             height: 7.6rem;
-            padding: 0 55px;
+            padding: 0 5.5rem;
 
             line-height: 7.5rem;
         }
@@ -113,7 +113,7 @@
 
             position: absolute;
             bottom: 0;
-            left: 50%;
+            left: 49%;
 
             width: 0;
             height: 0.4rem;
@@ -136,7 +136,7 @@
 
             color: var(--dark-blue);
 
-            @media (--xl) {
+            @media (--lg) {
                 width: 100%;
             }
         }
@@ -146,32 +146,36 @@
 .tabcontent {
     padding-top: 7.2rem;
 
-    @media (--xl) {
+    @media (--lg) {
         display: grid;
 
-        grid-column-gap: 81px;
+        grid-column-gap: 2rem;
         grid-template-columns: 1fr 0.9fr;
 
-        padding-top: 8rem;
-        padding-bottom: 72px;
+        padding-top: 7.5rem;
+        padding-bottom: 7.2rem;
 
         text-align: left;
 
         & > div {
-            padding-top: 62px;
-            padding-left: 43px;
+            padding-top: 6.2rem;
+            padding-left: 4.3rem;
+        }
+
+        @media (--xl) {
+            grid-column-gap: 8.1rem;
         }
     }
 
     & img {
         margin: 0 auto 7.5rem;
-        /* margin-left: auto; */
 
         @media (--md) {
-            width: 90%;
+            width: 100%;
             margin-bottom: 10rem;
         }
-        @media (--xl) {
+
+        @media (--lg) {
             margin-bottom: 0;
         }
     }
@@ -179,7 +183,7 @@
     & .btn {
         display: none;
 
-        @media (--xl) {
+        @media (--lg) {
             display: block;
 
             margin-left: 0;
@@ -189,18 +193,26 @@
 
 #tab-02 img {
     width: 85%;
-    margin: -17px 0 6.2rem 13%;
+    margin: -1.7rem 0 6.2rem 13%;
 
-    @media (--md) {
-        width: 75.6%;
+    @media (--lg) {
+        width: 42rem;
+    }
+
+    @media (--xl) {
+        width: 48rem;
     }
 }
 
 #tab-03 img {
     width: 86%;
-    margin: -17px 0 6.2rem 13%;
+    margin: -1.7rem 0 6.2rem 13%;
 
-    @media (--md) {
-        width: 76.1%;
+    @media (--lg) {
+        width: 42rem;
+    }
+
+    @media (--xl) {
+        width: 44rem;
     }
 }
