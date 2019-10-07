@@ -1,7 +1,9 @@
 .intro {
     position: relative;
 
-    margin-bottom: 17.8rem;
+    @media (--lg) {
+        margin-bottom: 17.8rem;
+    }
 
     & .container {
         display: flex;

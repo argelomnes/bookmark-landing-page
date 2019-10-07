@@ -4,7 +4,7 @@
     margin-bottom: 9.1rem;
 
     text-align: center;
-    /*
+
     &::after {
         content: '';
 
@@ -14,38 +14,38 @@
         top: 46.5rem;
         left: 0;
 
-        width: 81.6vw;
-        height: 20.3rem;
+        width: 78.7vw;
+        height: 20.2rem;
 
         border-top-right-radius: 14rem;
         border-bottom-right-radius: 10rem;
 
         background-color: var(--soft-blue);
 
-        @media (--md) {
-            top: 53.5rem;
+        @media (--sm) {
+            height: 25rem;
+        }
 
-            width: 74.5vw;
+        @media (--md) {
+            top: 56.5rem;
+
             height: 35.2rem;
 
-            border-top-right-radius: 14rem;
+            border-top-right-radius: 17.3rem;
             border-bottom-right-radius: 17.3rem;
         }
-
         @media (--lg) {
-            top: 40rem;
+            top: 42.1rem;
 
-            width: 41.5vw;
-            height: 30rem;
+            width: 44.3vw;
+            height: 32rem;
         }
         @media (--xl) {
-            top: 42rem;
-
-            width: 41.5vw;
+            /* top: 42.1rem;
+            width: 44.3vw; */
             height: 35.2rem;
         }
     }
-    */
 }
 
 .tab {
@@ -113,7 +113,7 @@
 
             position: absolute;
             bottom: 0;
-            left: 49%;
+            left: 49.5%;
 
             width: 0;
             height: 0.4rem;
